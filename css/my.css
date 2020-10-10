@@ -1,0 +1,137 @@
+nav {
+	border-bottom-width: 3px;
+	border-color: #24a2b8;
+	border-bottom-style: solid;
+	/*padding-bottom: 10px;*/
+}
+
+span.power2 {
+	color: #24a2b8;
+}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+div.slide {
+	border-bottom-width: 3px;
+	border-color: #24a2b8;
+	border-bottom-style: solid;
+}
+
+div.card {
+	/*margin-top: 20px;*/
+	margin-bottom: 30px;
+}
+
+ol.carousel-indicators {
+	background-color: #ffffff22;
+}
+
+ol.carousel-indicators li {
+	background-color: #24a2b8;
+}
+
+span.carosuel-control-next-icon {
+	color: #24a2b8;
+}
+
+/*=======================================*/
+
+/*Корректировка цветов у новостных блоков*/
+
+/*=======================================*/
+
+/***********/
+/* Новость */
+/***********/
+
+div.bg-info {
+	border-color: #166c7b;
+}
+
+div.bg-info div.card-header{
+	background-color: #1c8496;
+}
+
+div.bg-info div.card-body{
+	background-color: #166c7b;
+}
+
+/************/
+/* Внимание */
+/************/
+
+div.bg-warning {
+	border-color: #d0a22c;
+}
+
+div.bg-warning div.card-header{
+	background-color: #d0a22c;
+}
+
+div.bg-warning div.card-body{
+	background-color: #b98f25;
+}
+
+/*********/
+/* Успех */
+/*********/
+
+div.bg-success {
+	border-color: #24983f;
+}
+
+div.bg-success div.card-header{
+	background-color: #24983f;
+}
+
+div.bg-success div.card-body{
+	background-color: #1e8035;
+}
+
+/*********/
+/* Важно */
+/*********/
+
+div.bg-danger {
+	border-color: #a52f3a;
+}
+
+div.bg-danger div.card-header{
+	background-color: #a52f3a;
+}
+
+div.bg-danger div.card-body{
+	background-color: #902a34;
+}
+
+
+/*=======================================*/
+
+/*                FOOTER                 */
+
+/*=======================================*/
+
+div.footer {
+	border-top-width: 3px;
+	border-color: #24a2b8;
+	border-top-style: solid;
+}
+
+div.social-div {
+	background-color: #ff3355;
+	border-radius: 50%;
+}
+
+div.social-inst { background-color: #E1306C; }
+div.social-vk   { background-color: #465b7f; }
+div.social-tg   { background-color: #29afd8; }
+div.social-wa   { background-color: #3caa44; }
+div.social-ok   { background-color: #ef921c; }
+
+img.social {
+	width: 50px;
+}
+
