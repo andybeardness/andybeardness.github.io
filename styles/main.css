@@ -1,37 +1,3 @@
-/* MAIN STYLES */
-
-body {
-	background-color: #272822;
-	color: #F8F8F2 !important;
-}
-
-a {
-	color: #F8F8F2 !important;
-}
-
-
-/* NAVBAR */
-
-/*nav .navbar {
-	background-color: #272822;
-}*/
-
-.bg-dark {
-	background-color: #272822 !important;
-}
-
-.right-side {
-	text-align: right;
-}
-
-span .navbar-toggler-color {
-	background-color: #7eb444;
-}
-
-ul .dropdown-menu {
-	background-color: #272822;
-}
-
-.dropdown-item :hover {
-	background-color: #f00 !important;
+.experience p {
+	margin-bottom: 0;
 }

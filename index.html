@@ -1,83 +1,398 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-	<link href="styles/main.css" rel="stylesheet" type="text/css">
-
-	<title>Бородин Андрей | Разработчик</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<title>BEARDNESS ANDY</title>
 </head>
 <body>
-	<div class="container">
-		<div class="col-12">
+	<!-- ALL PAGE THERE -->
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-10">
 
-			<div class="row" class="navbar">
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<div class="container-fluid">
+				<!-- ALL CONTENT -->
+				<div class="container-fluid bg-light">
 
-						<a class="navbar-brand" href="#">
-							Бородин Андрей | Разработчик
-						</a>
+					<!-- NAVIGATION -->
+					<div class="row navigation">
+						<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon">
-							</span>
-						</button>
+							<div class="container-fluid">
 
-						<div class="collapse navbar-collapse right-side" id="navbarSupportedContent">
-							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<a class="navbar-brand" href="#">BEARDNESS</a>
 
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										Стаж работы
-									</a>
-								</li>
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
 
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										Link
-									</a>
-								</li>
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-								<!-- Drop Down Button -->
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										Dropdown
-									</a>
-									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="#">Action</a></li>
-										<li><a class="dropdown-item" href="#">Another action</a></li>
-										<li><hr class="dropdown-divider"></li>
-										<li><a class="dropdown-item" href="#">Something else here</a></li>
+									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+										<li class="nav-item">
+											<a class="nav-link" aria-current="page" href="#info">О сайте</a>
+										</li>
+
+										<li class="nav-item">
+											<a class="nav-link" aria-current="page" href="#about">Обо мне</a>
+										</li>
+
+										<li class="nav-item">
+											<a class="nav-link" href="#skills">Навыки</a>
+										</li>
+
+										<li class="nav-item">
+											<a class="nav-link" href="#projects">Проекты</a>
+										</li>
+
+										<li class="nav-item">
+											<a class="nav-link" href="#experience">Опыт</a>
+										</li>
+
+										<li class="nav-item">
+											<a class="nav-link" href="#contacts">Контакты</a>
+										</li>
+
 									</ul>
-								</li>
 
-								<li class="nav-item">
-									<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-								</li>
+								</div>
+							</div>
+						</nav>
+					</div>
 
-							</ul>
+					<!-- CONTENT ABOUNT SITE -->
+					<div class="row" id="info">
+						<div class="col-12">
+							<h1>О сайте</h1>
+							<p>Это сайт-визитка / сайт-резюме. Тут есть инфа "Обо мне", "Проекты", "Контакты" и другое всякое разное</p>
 						</div>
 					</div>
+
+					<!-- CONTENT ABOUT -->
+					<div class="row" id="about">
+						<div class="col-12">
+							<h1>Обо мне</h1>
+
+							<div class="container-fluid">
+								<div class="row">
+
+									<div class="col">
+										<h4>Кратко</h4>
+										<p class="mb-0">ФИ : <b>Бородин Андрей</b></p>
+										<p class="mb-0">Возраст : <b>27 лет</b></p>
+										<p class="mb-0">Город : <b>Москва</b></p>
+										<p class="">Метро : <b>Бибирево</b></p>
+										<h4>Длинно</h4>
+										<p>Меня зовут Андрей, я начинающий Android-разработчик с двухлетним бэкграундом в Data Science</p>
+										<p>Большую часть знаний беру из книг. Но по Android их не так много, как хотелось бы. Поэтому читаю документацию, смотрю курсы, делаю домашние проекты</p>
+									</div>
+
+									<div class="col-12 col-md-4 col-lg-4 col-xl-3">
+										<img class="img-responsive rounded-circle border border-primary" alt="Аватар" width="100%" height="auto" src="src/avatar.png">
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- CONTENT SKILLS -->
+					<div class="row" id="skills">
+						<div class="col-12">
+							<h1>Навыки</h1>
+
+							<div class="container-fluid">
+								<div class="row justify-content-center">
+
+									<div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+										<p class="mb-0 mt-2"><b>Python</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										
+										<p class="mb-0 mt-2"><b>Java</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										
+										<p class="mb-0 mt-2"><b>Kotlin</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										
+										<p class="mb-0 mt-2"><b>SQL</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+
+										<p class="mb-0 mt-2"><b>HTML CSS</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+
+										<p class="mb-0 mt-2"><b>C</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+
+										<p class="mb-0 mt-2"><b>C++</b></p>
+										<div class="progress">
+											<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- CONTENT PROJECTS -->
+					<div class="row " id="projects">
+						<div class="col-12">
+							<h1>Проекты</h1>
+							<div class="container-fluid">
+
+								<div class="row justify-content-center">
+
+									<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5">
+										<h4>Android</h4>
+										
+										<p class="mb-0 mt-2"><b>«YesNoGame»</b> Игра Да-Нет-ки</p>
+										<a class="btn btn-dark" href="#">Preview</a>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Android-YesNoGame">GitHub</a>
+
+										<p class="mb-0 mt-2"><b>«SetuPaTimer»</b> Сборник Bad Jokes</p>
+										<a class="btn btn-dark" href="#">Preview</a>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Android-SetuPaTimer">GitHub</a>
+
+										<p class="mb-0 mt-2"><b>«Securii»</b> Менеджер паролей</p>
+										<a class="btn btn-dark" href="#">Preview</a>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Android-Securii">GitHub</a>
+										<a class="btn btn-success" target="_blank" href="https://play.google.com/store/apps/details?id=com.beardness.securii">PlayMarket</a>
+
+										<p class="mb-0 mt-2"><b>«Coffe Chain App»</b> Приложение для кофейни</p>
+										<a class="btn btn-dark" href="#">Preview</a>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Android-CoffeChain">GitHub</a>
+
+										<p class="mb-0 mt-2"><b>«EmailSender»</b> Отправка email через приложение</p>
+										<a class="btn btn-dark" href="#">Preview</a>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Android-EmailSender">GitHub</a>
+
+										<p class="mb-0 mt-2"><b>«SimpleTimer»</b> Простой таймер</p>
+										<a class="btn btn-dark" href="#">Preview</a>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Android-SimpleTimer">GitHub</a>
+
+										<p class="mb-0 mt-2"><b>«Крипто-Гороскоп»</b> На основе SHA256</p>
+										<a class="btn btn-success" target="_blank" href="https://play.google.com/store/apps/details?id=andy4.cryptohoro.horoscopehash">PlayMarket</a>
+
+									</div>
+
+									<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5">
+										<h4>Обучающие</h4>
+										
+										<p class="mb-0 mt-2"><b>«Learning-OOP»</b> Изучаю паттерны и делаю приложение под каждый паттерн</p>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Learning-OOP">GitHub</a>
+
+										<p class="mb-0 mt-2"><b>«Learning-C</b> Изучаю язык Си и делаю упражнения</p>
+										<a class="btn btn-primary" target="_blank" href="https://github.com/andybeardness/Learning-C">GitHub</a>
+
+									</div>
+
+
+									<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5">
+										<h4>Data Science</h4>
+
+										<p class="mb-0 mt-2"><b>CV-Генераторы</b> Шрифты, логотипы, лица MNIST, цифры MNIST</p>
+										<p class="mb-0 mt-2"><b>CV-Преобразователи</b> Style-Transfer, сеть для акцентирования цвета</p>
+										<p class="mb-0 mt-2"><b>CV-Классификаторы</b> Классификация города по фото</p>
+										<p class="mb-0 mt-2"><b>NLP-Генераторы</b> Текст посивольно, текст по словам,</p>
+										<p class="mb-0 mt-2"><b>Цепи Маркова</b> Генерация текста, оптимизация запросов в техническую поддержку</p>
+										<p class="mb-0 mt-2"><b>Другое</b> Анализ клиентских запросов в техническую поддержку, калькулятор на основе нейронной сети</p>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTENT EXPERIENCE -->
+					<div class="row " id="experience">
+						<div class="col-12">
+							<h1>Опыт</h1>
+
+							<div class="container-fluid">
+
+								<div class="row experience mt-5 mb-5">
+									<div class="col">
+
+										<h3>Сбербанк</h3>
+										<h5>май 2020 — февраль 2021</h5>
+										<h5>Data Scientist NLP-Research| Розница</h5>
+
+										<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sberbank" aria-expanded="false">
+											Показать / Скрыть
+										</button>
+
+										<div class="collapse" id="collapse-sberbank">
+
+											<p>Занимался исследованием данных и построением ML и NLP моделей</p>
+											<p>Работа была в AGILE-режиме, что подразумевает ответственность за принятые решения и проекты</p>
+											<p>Использовал категории данных :</p>
+											<p>  ▸ Клиентские : глубокие данные о клиенте</p>
+											<p>  ▸ Кредитные карты : детальные транзакции кредитных карт</p>
+											<p>  ▸ Коммуникации : тексты коммуникаций и реакция клиентов на них</p>
+											<p>Работал с Big Data и использовал обработку батчами для получения данных и обучения моделей</p>
+											<p>Участвовал в обсуждении новых пилотов и обрабатывал данные по их окончанию</p>
+											<p>Реализовал модели :</p>
+											<p>  ▸ Кластеризация клиентов по потребностям в кредитной карте :</p>
+											<p>        ▹ Кластеризация пользователей по схожим группам трат</p>
+											<p>        ▹ Анализ качества кластеризации с помощью алгоритмов «Silhouette» и «Баланс кластеров»</p>
+											<p>        ▹ Организовал отображение интерактивной статистики на основе кластеризации для новых входных данных</p>
+											<p>        ▹ Построил модель для рекомендации кредитной карты на основе клиентов, которые брали карту раньше</p>
+											<p>        ▹ Проводил анализ итогов пилота и дообучал модели с расширением категорий для рекомендаций</p>
+											<p>  ▸ Структура текста :</p>
+											<p>        ▹ Проводил анализ элементов структуры текста</p>
+											<p>        ▹ Сделал алгоритм подбора структуры под отдельного клиента</p>
+											<p>        ▹ Анализировал итоги пилотов и дообучал модели на новых данных</p>
+											<p>  ▸ Модель синонимов :</p>
+											<p>        ▹ Построил модель, которая предлагает заменять длинные слова в коммуникации на короткие, чтобы уменьшить стоимость смс</p>
+											<p>        ▹ Занимался Data Mining для добычи открытых словарей синонимов</p>
+											<p>        ▹ Модель была нужна копирайтерам для ускорения работы</p>
+											<p>  ▸ Генерация текста :</p>
+											<p>        ▹ Построил алгоритм «Марковских цепей» для генерирования коротких коммуникаций</p>
+											<p>        ▹ Дообучал алгоритм на новых данных</p>
+											<p>  ▸ Остальные небольшие модели для решения быстрых задач :</p>
+											<p>        ▹ XGBoost</p>
+											<p>        ▹ LightGBM</p>
+											<p>Инструменты :</p>
+											<p>  ▸ Разработка :</p>
+											<p>        ▹ Python 3.4 - 3.7</p>
+											<p>        ▹ Jupyter Notebook</p>
+											<p>        ▹ Google Colab</p>
+											<p>        ▹ Суперкомпьютер Сбербанка «Кристофари»</p>
+											<p>        ▹ Machine Learning : sklearn, scipy, pyOpt, pandas, numpy, ...</p>
+											<p>        ▹ Deep Learning библиотеки : TF 1.x - 2.x, PyTorch, NLTK, ...</p>
+											<p>  ▸ Базы данных :</p>
+											<p>        ▹ Teradata SQL</p>
+											<p>        ▹ Spark SQL</p>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="row experience mt-5 mb-5">
+									<div class="col">
+
+										<h3>МТС Банк</h3>
+										<h4>февраль 2020 — февраль 2020</h4>
+										<h4>Data Scientist | Риски</h4>
+
+										<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mts" aria-expanded="false">
+											Показать / Скрыть
+										</button>
+
+										<div class="collapse" id="collapse-mts">
+
+											<p>Проработал немного, за это время :</p>
+											<p>  ▸ Работа с данными : написал скрипт, который объединяет несколько запросов и готовит данные для модели</p>
+											<p>  ▸ Модели : начал обучать модель lightGBM на собранных данных</p>
+											<p>Инструменты :</p>
+											<p>  ▸ Разработка :</p>
+											<p>        ▹ Python 3.x</p>
+											<p>        ▹ Jupyter Notebook</p>
+											<p>        ▹ Machine Learning : sklearn, pandas, numpy, lightGBM, ...</p>
+											<p>        ▹ Deep Learning библиотеки : TF 1.x - 2.x, PyTorch, NLTK, ...</p>
+											<p>  ▸ Базы данных :</p>
+											<p>        ▹ Oracle SQL</p>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="row experience mt-5 mb-5">
+									<div class="col">
+
+										<h3>АДВ</h3>
+										<h4>май 2019 — февраль 2020</h4>
+										<h4>Junior Data Scientist | Эконометрика</h4>
+
+										<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-adv" aria-expanded="false">
+											Показать / Скрыть
+										</button>
+
+										<div class="collapse" id="collapse-adv">
+
+											<p>В АДВ занимался построением эконометрических моделей для анализа данных о продажах товара и рекламе</p>
+											<p>Моя работа :</p>
+											<p>  ▸ Строил модели линейной регрессии для описания продаж</p>
+											<p>  ▸ Занимался валидацией модели</p>
+											<p>  ▸ Проводил статистический анализ модели</p>
+											<p>  ▸ Делал расчёт окупаемости инвестиций в рекламу : ROI</p>
+											<p>  ▸ Проводил моделирование различных сценариев для будущей рекламы</p>
+											<p>  ▸ Занимался оценкой эффекта насыщения от рекламы</p>
+											<p>  ▸ Строил модели RandomForest для задач, не связанных с эконометрикой</p>
+											<p>Инструменты :</p>
+											<p>  ▸ Разработка :</p>
+											<p>        ▹ Python 3.x</p>
+											<p>        ▹ Jupyter Notebook</p>
+											<p>        ▹ Machine Learning : pandas, statsmodels, sklearn, scipy, ...</p>
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<!-- CONTENT CONTACTS -->
+					<div class="row" id="contacts">
+						<div class="col-12">
+							<h1>Контакты</h1>
+
+							<div class="container-fluid">
+								<div class="row">
+
+									<div class="col">
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- FOOTER -->
+					<div class="row">
+						<div class="col-12">
+							<h1>Footer will be here</h1>
+							<p>Footer will be here</p>
+						</div>
+					</div>
+
 				</div>
 
 			</div>
 		</div>
-	</nav>
+	</div>
 
 
+	<!-- BOOTSTRAP SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
