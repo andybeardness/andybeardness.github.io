@@ -1,254 +1,83 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Соляник²</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="shortcut icon" href="imgs/fav/fav.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/my.css">
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+
+	<title>Бородин Андрей | Разработчик</title>
 </head>
+<body>
+	<div class="container">
+		<div class="col-12">
 
-<body class='bg-dark text-white col-12'>
+			<div class="row" class="navbar">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<div class="container-fluid">
 
-	<!-- NAV BAR -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-	  <a class="navbar-brand" href="#">Соляник <span class="power2">²</span></a>
+						<a class="navbar-brand" href="#">
+							Бородин Андрей | Разработчик
+						</a>
 
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  
-	  <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Главная</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Новости</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Домашнее задание
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">5 класс</a>
-	          <a class="dropdown-item" href="#">6 класс</a>
-	          <a class="dropdown-item" href="#">7 класс</a>
-	          <a class="dropdown-item" href="#">8 класс</a>
-	          <a class="dropdown-item" href="#">9 класс</a>
-	          <a class="dropdown-item" href="#">10 класс</a>
-	          <a class="dropdown-item" href="#">11 класс</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">О сайте</a>
-	      </li>
-	    </ul>
-	  </div>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon">
+							</span>
+						</button>
+
+						<div class="collapse navbar-collapse right-side" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										Стаж работы
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										Link
+									</a>
+								</li>
+
+								<!-- Drop Down Button -->
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Dropdown
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Another action</a></li>
+										<li><hr class="dropdown-divider"></li>
+										<li><a class="dropdown-item" href="#">Something else here</a></li>
+									</ul>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 	</nav>
 
-	<!-- CONTENT -->
-	<div class="other-content col-12 col-md-10 col-lg-10 mx-auto">
-		
-		<!-- SLIDER -->
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
-			<h2>Карусель&nbsp;фото&nbsp;: Выпуск&nbsp;2020</h2>
 
-		  <ol class="carousel-indicators">
-		    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-		  </ol>
 
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img src="imgs/slider/IMG_1.jpg" class="d-block w-100" alt="...">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="imgs/slider/IMG_2.jpg" class="d-block w-100" alt="...">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="imgs/slider/IMG_3.jpg" class="d-block w-100" alt="...">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="imgs/slider/IMG_4.jpg" class="d-block w-100" alt="...">
-		    </div>
-		  </div>
-		  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Назад</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Вперёд</span>
-		  </a>
-		</div>	
 
-		<!-- NEWS -->
-		<div class="news">
 
-			<h2>Новости</h2>
-			
-			<!-- info card -->
-			<div class="card bg-info">
-			  <div class="card-header">
-			    Информация 
-			  </div>
-			  <div class="card-body">
-			    <h5 class="card-title">Контрольная работа в 9 "Б"</h5>
-			    <p class="card-text">
-			    	29 октября будет контрольная работу на тему "Интегралы"
-			    </p>
-			    <!-- <a href="#" class="btn btn-primary">Читать далее</a> -->
-			  </div>
-			</div>
 
-			<!-- warning card -->
-			<div class="card bg-warning">
-			  <div class="card-header">
-			    Внимание
-			  </div>
-			  <div class="card-body">
-			    <h5 class="card-title">Родительское собрание 5 "Б"</h5>
-			    <p class="card-text">
-			    	16 октября в 17:00 пройдёт родительское собрание 5 "Б" класса. Место: кабинет №108 на первом этаже "Нового здания"
-			    </p>
-			    <!-- <a href="#" class="btn btn-primary">Переход куда-нибудь</a> -->
-			  </div>
-			</div>
 
-			<!-- success card -->
-			<div class="card bg-success">
-			  <div class="card-header">
-			    Успех
-			  </div>
-			  <div class="card-body">
-			    <h5 class="card-title">Олимпиада 2020</h5>
-			    <p class="card-text">
-			    	В сентябре прошла оллимпиада по математематики, где мои ученики Васильева Даша и Дашин Вася заняли 1ое и 2ое место. Поздравляем!
-			    </p>
-			    <!-- <a href="#" class="btn btn-primary">Переход куда-нибудь</a> -->
-			  </div>
-			</div>
 
-			<!-- danger card -->
-			<div class="card bg-danger">
-			  <div class="card-header">
-			    Важно
-			  </div>
-			  <div class="card-body">
-			    <h5 class="card-title">Пропала золотая цепочка</h5>
-			    <p class="card-text">
-			    	В четверг (2 октября) ученица из 5 "Б" потеряла цепочку. Предположительно в районе спортзала и гардероба. Если её нашли, то принесите в учительскую или мой кабинет №108. Спасибо
-			    </p>
-			    <!-- <a href="#" class="btn btn-primary">Переход куда-нибудь</a> -->
-			  </div>
-			</div>
-		</div>	
 
-	</div>
 
-	<!-- FOOTER -->
-	<div class="footer">
-		<footer class="page-footer font-small special-color-dark pt-4">
-
-		  <!-- Footer Elements -->
-		  <div class="container">
-
-		    <!-- Social buttons -->
-		    <ul class="list-unstyled list-inline text-center">
-		      <li class="list-inline-item">
-		        <!-- <a class="btn-floating btn-fb mx-1"> -->
-		          <!-- <i class="fab"> -->
-		          	<div class="social-div social-inst">
-		          		<a href="https://www.instagram.com/elenasolyanik007" target="_blank">
-		          			<img class="social" src="imgs/social/instagram.png" alt="">
-									</a>
-		          	</div>
-		          <!-- </i> -->
-		        <!-- </a> -->
-		      </li>
-		      <li class="list-inline-item">
-		        <!-- <a class="btn-floating btn-tw mx-1"> -->
-		          <!-- <i class="fab"> -->
-		          	<div class="social-div social-vk">
-		          		<a href="https://vk.com/id10333000" target="_blank">
-		  	        		<img class="social" src="imgs/social/vk.png" alt="">
-									</a>
-		          	</div>
-		          <!-- </i> -->
-		        <!-- </a> -->
-		      </li>
-		      <li class="list-inline-item">
-		        <!-- <a class="btn-floating btn-gplus mx-1"> -->
-		          <!-- <i class="fab"> -->
-		          	<div class="social-div social-tg">
-		          		<a href="https://telegram.me/ElenaSolyanik" target="_blank">
-			          		<img class="social" src="imgs/social/telegram.png" alt="">
-									</a>
-		          	</div>
-		          <!-- </i> -->
-		        <!-- </a> -->
-		      </li>
-		      <li class="list-inline-item">
-		        <!-- <a class="btn-floating btn-li mx-1"> -->
-		          <!-- <i class="fab"> -->
-		          	<div class="social-div social-wa">
-		          		<a href="https://api.whatsapp.com/send?phone=79648681637" target="_blank">
-			          		<img class="social" src="imgs/social/whatsapp.png" alt="">
-									</a>
-		          	</div>
-		          <!-- </i> -->
-		        <!-- </a> -->
-		      </li>
-		      <li class="list-inline-item">
-		        <!-- <a class="btn-floating btn-li mx-1"> -->
-		          <!-- <i class="fab"> -->
-		          	<div class="social-div social-ok">
-		          		<a href="https://ok.ru/profile/136475213369" target="_blank">
-			          		<img class="social" src="imgs/social/ok.png" alt="">
-									</a>
-		          	</div>
-		          <!-- </i> -->
-		        <!-- </a> -->
-		      </li>
-		      <!-- <li class="list-inline-item"> -->
-		        <!-- <a class="btn-floating btn-dribbble mx-1"> -->
-		          <!-- <i class="fab fa-dribbble"> </i> -->
-		        <!-- </a> -->
-		      <!-- </li> -->
-		    </ul>
-		    <!-- Social buttons -->
-
-		  </div>
-		  <!-- Footer Elements -->
-
-		  <!-- Copyright -->
-		  <div class="footer-copyright text-center py-3">
-		  	<span class="text-secondary">Сайт cделал</span>
-		    <a href="https://vk.com/beardness.andy" target="_blank" class="text-info"> beardness.andy</a>
-		  </div>
-		  <!-- Copyright -->
-
-		</footer>
-	</div>
-
-	<!-- JAVASCRIPT -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
