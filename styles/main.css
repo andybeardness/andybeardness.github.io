@@ -1,3 +1,11 @@
+.row h1 {
+	text-align: center;
+}
+
+.round-border {
+	border-radius: 20px;
+}
+
 .experience p {
 	margin-bottom: 0;
 }
