@@ -2,3 +2,8 @@
     box-shadow: inset 6px 6px 12px #351b50,
         inset -6px -6px 12px #974be2;
 }
+
+
+.input-name::placeholder, .input-message::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
