@@ -1,9 +1,0 @@
-.send-button {
-    box-shadow: 10px 10px 20px #351b50,
-        -10px -10px 20px #974be2;
-}
-
-.send-button:active {
-    box-shadow: inset 10px 10px 20px #351b50,
-                inset -10px -10px 20px #974be2;
-}
