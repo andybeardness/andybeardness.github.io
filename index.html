@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p>Work Knight - Android App - <a href="word-knight/index.html">Policy</a></p>
-    <p>Maco SMS - Android App - <a href="maco-sms/index.html">Policy</a></p>
-    <p></p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="photo"></div>
+
+  <div class="text">
+    <h1>ANDY BEARDNESS</h1>
+    <p>ANDROID DEVELOPER</p>
+    <a href="https://github.com/andybeardness" target="_blank"><img src="gh.svg" alt=""></a>
+    <div><p class="tg">Telegram <a href="">@beardness</a></p></div>
+  </div>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "SourceCode";
+      src: url("font-light.ttf");
+    }
+
+    @font-face {
+      font-family: "SourceCode";
+      src: url("font-regular.ttf");
+      font-weight: bold;
+    }
+
+    body,
+    html {
+      height: 100%;
+      background-color: black;
+    }
+
+    .photo {
+      /* The image used */
+      background-image: url("bg.jpg");
+
+      /* Add the blur effect */
+      filter: blur(6px);
+      -webkit-filter: blur(6px);
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 2px solid #6a007b;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 70%;
+      min-width: 400px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, p, img {
+      font-family: 'SourceCode';
+      padding: 12px;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 4em;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    img {
+      width: 100px;
+      filter: invert(100%);
+    }
+
+    p a {
+      color: hotpink;
+    }
+
+    .tg {
+      background-color: rgba(0, 0, 0, 0.50);
+      display: inline-block;
+    }
+  </style>
+
+  <a href="word-knight/index.html"></a>
+  <a href="maco-sms/index.html"></a>
+  <p></p>
+</body>
+
 </html>
