@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy Beardness — Projects</title>
+    <title>Korobochka — Support</title>
     <style>
         :root {
             --bg: #0f1115;
@@ -27,9 +27,20 @@
         main {
             max-width: 720px;
             margin: 0 auto;
-            padding: 64px 24px;
+            padding: 48px 24px;
             flex: 1;
             width: 100%;
+        }
+        nav {
+            margin-bottom: 32px;
+            font-size: 0.9rem;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: var(--accent);
         }
         h1 {
             font-size: 2rem;
@@ -40,32 +51,27 @@
             color: var(--muted);
             margin: 0 0 40px;
         }
-        .projects {
-            display: grid;
-            gap: 16px;
+        h2 {
+            font-size: 1.15rem;
+            margin: 32px 0 12px;
         }
-        .project {
-            display: block;
-            padding: 20px 24px;
+        .card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
+            padding: 20px 24px;
+        }
+        a.link {
+            color: var(--accent);
             text-decoration: none;
-            color: inherit;
-            transition: border-color 0.15s, transform 0.15s;
         }
-        .project:hover {
-            border-color: var(--accent);
-            transform: translateY(-1px);
+        a.link:hover {
+            text-decoration: underline;
         }
-        .project h2 {
-            margin: 0 0 4px;
-            font-size: 1.15rem;
-        }
-        .project p {
-            margin: 0;
-            color: var(--muted);
-            font-size: 0.95rem;
+        .links {
+            display: grid;
+            gap: 12px;
+            margin-top: 16px;
         }
         footer {
             color: var(--muted);
@@ -74,29 +80,33 @@
             font-size: 0.85rem;
             border-top: 1px solid var(--border);
         }
-        footer a {
-            color: var(--muted);
-        }
+        footer a { color: var(--muted); }
     </style>
 </head>
 <body>
     <main>
-        <h1>Andy Beardness</h1>
-        <p class="subtitle">Independent developer. Mobile & web projects.</p>
+        <nav><a href="/">← All projects</a></nav>
 
-        <div class="projects">
-            <a class="project" href="/korobochka/">
-                <h2>Korobochka</h2>
-                <p>Support & privacy policy</p>
-            </a>
-            <a class="project" href="/formular/">
-                <h2>Formular</h2>
-                <p>Support & privacy policy</p>
-            </a>
+        <h1>Korobochka</h1>
+        <p class="subtitle">Support page</p>
+
+        <div class="card">
+            <p>Have a question, issue, or feature request? Get in touch:</p>
+            <div class="links">
+                <div>📧 Email: <a class="link" href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></div>
+            </div>
+        </div>
+
+        <h2>Documents</h2>
+        <div class="card">
+            <div class="links">
+                <div>🔒 <a class="link" href="/korobochka/privacy.html">Privacy Policy</a></div>
+            </div>
         </div>
     </main>
     <footer>
-        <a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a>
+        © <span id="year"></span> Andy Beardness
     </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

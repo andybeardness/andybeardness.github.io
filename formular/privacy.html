@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Formular — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Formular app." />
+<link rel="icon" href="data:," />
+<style>
+  :root {
+    --bg: #f2f2f7;
+    --surface: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6c6c70;
+    --separator: #e5e5ea;
+    --accent: #5856d6;
+    --accent-tint: #eeedfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --surface: #1c1c1e;
+      --text: #ffffff;
+      --muted: #aeaeb2;
+      --separator: #2c2c2e;
+      --accent: #7d7aff;
+      --accent-tint: #1f1e3d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 20px 56px; }
+
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 0 0;
+    gap: 12px;
+  }
+  .back-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .lang-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--surface);
+    color: var(--text);
+    border: 0.5px solid var(--separator);
+    border-radius: 10px;
+    padding: 8px 32px 8px 12px;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    background-image:
+      linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+      linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+    background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+  }
+
+  header { text-align: center; padding: 12px 0 24px; }
+  .logo {
+    width: 72px; height: 72px;
+    border-radius: 18px;
+    background: var(--accent);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    margin-bottom: 14px;
+    box-shadow: 0 8px 24px rgba(88, 86, 214, 0.25);
+  }
+  h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.4px; }
+  .tagline { color: var(--muted); margin: 0; font-size: 16px; }
+
+  section.meta {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 4px 16px;
+    margin-top: 6px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  }
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 4px;
+    border-bottom: 0.5px solid var(--separator);
+    font-size: 15px;
+  }
+  .meta-row:last-child { border-bottom: 0; }
+  .meta-row .k { color: var(--muted); flex-shrink: 0; }
+  .meta-row .v { text-align: right; word-break: break-word; }
+
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 22px 4px 8px;
+    padding-left: 4px;
+  }
+  .intro {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin: 6px 0 0;
+    font-size: 15px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  }
+
+  article {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-top: 10px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  }
+  article h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    letter-spacing: -0.2px;
+  }
+  article p { margin: 8px 0; font-size: 15px; color: var(--text); }
+  article ul { margin: 8px 0; padding-left: 22px; font-size: 15px; }
+  article li { margin: 4px 0; }
+  article code {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    background: var(--accent-tint);
+    color: var(--accent);
+    padding: 1px 6px;
+    border-radius: 6px;
+    word-break: break-all;
+  }
+  article strong { font-weight: 600; }
+  article a { color: var(--accent); text-decoration: none; }
+
+  .row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 4px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .row .icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: var(--accent-tint);
+    color: var(--accent);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .row .body { flex: 1; min-width: 0; }
+  .row .title { font-size: 16px; font-weight: 500; }
+  .row .value { font-size: 14px; color: var(--muted); margin-top: 2px; word-break: break-all; }
+  .row .chev { color: var(--muted); font-size: 18px; }
+  section.contact {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 4px 16px;
+    margin-top: 6px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 32px;
+  }
+  footer p { margin: 4px 0; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="back-link" href="/formular/" data-i18n="back"></a>
+      <select class="lang-select" id="langSelect" aria-label="Language">
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ko">한국어</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+
+    <header>
+      <div class="logo">F</div>
+      <h1 data-i18n="heading"></h1>
+      <p class="tagline" data-i18n="subtitle"></p>
+    </header>
+
+    <h2 data-i18n="meta_heading"></h2>
+    <section class="meta" id="metaList"></section>
+
+    <h2 data-i18n="intro_heading"></h2>
+    <p class="intro" data-i18n="intro"></p>
+
+    <h2 data-i18n="sections_heading"></h2>
+    <div id="sections"></div>
+
+    <h2 data-i18n="contact_heading"></h2>
+    <section class="contact">
+      <a class="row" id="emailRow" href="mailto:beardness.andy@gmail.com">
+        <span class="icon">✉</span>
+        <span class="body">
+          <div class="title" data-i18n="email_title"></div>
+          <div class="value">beardness.andy@gmail.com</div>
+        </span>
+        <span class="chev">›</span>
+      </a>
+    </section>
+
+    <footer>
+      <p data-i18n="footer_1"></p>
+      <p data-i18n="footer_2"></p>
+    </footer>
+  </div>
+
+<script>
+const I18N = {
+  en: {
+    title: "Formular — Privacy Policy",
+    heading: "Privacy Policy",
+    subtitle: "Formular — privacy practices",
+    back: "‹ Support",
+    meta_heading: "Document",
+    meta: [
+      ["App", "Formular"],
+      ["Platforms", "Android, iOS"],
+      ["Developer", "Andy Beardness"],
+      ["Contact", "beardness.andy@gmail.com"],
+      ["Effective date", "May 19, 2026"],
+      ["Last updated", "May 19, 2026"]
+    ],
+    intro_heading: "Overview",
+    intro: 'This Privacy Policy describes how the Formular mobile application (the "app") handles user information. By installing and using the app, you agree to the terms of this policy.',
+    sections_heading: "Details",
+    sections: [
+      [
+        "1. What data the app processes",
+        '<p>The app <strong>does not collect, transmit, or store any personal data on remote servers</strong>. Everything you create inside the app — formulas, variables, calculations, history, groups, categories, templates, and user preferences — is stored <strong>locally on your device</strong> in the app’s sandboxed storage (a local Room database and the system DataStore).</p><p>The app does not request your name, email, phone number, location, contacts, camera, microphone, photo library, or any other personal data source.</p>'
+      ],
+      [
+        "2. Analytics, telemetry, and advertising",
+        '<p>The app does <strong>not</strong> use:</p><ul><li>analytics SDKs (Firebase Analytics, Amplitude, AppMetrica, etc.);</li><li>crash and log collection services (Crashlytics, Sentry, etc.);</li><li>advertising networks;</li><li>advertising identifiers (IDFA, AAID);</li><li>trackers or third-party pixels.</li></ul><p>No usage events leave your device.</p>'
+      ],
+      [
+        "3. Network connections",
+        '<p>The app operates <strong>fully offline</strong>. It does not send or receive data over the network during normal operation. The only exceptions are explicit hand-offs to external apps — for example, opening this policy in your browser or opening the system language-settings screen. Those hand-offs are performed by the operating system; the browser or system app that handles them is outside the scope of this policy.</p>'
+      ],
+      [
+        "4. Operating-system permissions",
+        "<p>The app requests <strong>no runtime permissions</strong> on Android or iOS. Changing the interface language is performed through the system’s built-in per-app language settings screen; no separate permission is required.</p>"
+      ],
+      [
+        "5. Data storage and deletion",
+        '<p>All your data is stored locally:</p><ul><li><strong>Android:</strong> in the app’s internal storage (<code>/data/data/andy.beardness.formular/</code>).</li><li><strong>iOS:</strong> inside the app sandbox (the <code>Documents/</code> directory).</li></ul><p>You can delete all app data at any time by:</p><ul><li>uninstalling the app through your operating system (Android: "Uninstall"; iOS: "Delete App") — all local data is removed together with the app;</li><li>clearing app data through system settings (Android: "Settings → Apps → Formular → Storage → Clear data").</li></ul><p>Once the app is uninstalled the data cannot be recovered — the developer never had a copy of it, because the data never left your device.</p>'
+      ],
+      [
+        "6. Sharing data with third parties",
+        "<p>The app <strong>does not share your data with third parties</strong>, because it does not have access to it. The developer also has no access to the contents of your device.</p>"
+      ],
+      [
+        "7. Children",
+        "<p>The app is not specifically directed at children under 13, and it does not contain content that requires age restrictions. Because no personal data is collected, no specific COPPA-compliance measures are required.</p>"
+      ],
+      [
+        "8. Security",
+        "<p>Because data never leaves the device, security is bounded by what the operating system itself provides: the app sandbox, device-level storage encryption (when enabled in system settings), and biometric or PIN device unlock.</p>"
+      ],
+      [
+        "9. Changes to this policy",
+        '<p>If future features change how data is handled, this policy will be updated and the date at the top of the document will be revised. The current version is always available in the app’s repository and via the "Privacy Policy" item in the in-app settings.</p>'
+      ],
+      [
+        "10. Contact",
+        '<p>For privacy-related questions, contact the developer:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "Contact",
+    email_title: "Email",
+    email_subject: "Formular — privacy question",
+    footer_1: "© Formular",
+    footer_2: "Privacy Policy"
+  },
+
+  ru: {
+    title: "Formular — Политика конфиденциальности",
+    heading: "Политика конфиденциальности",
+    subtitle: "Formular — обработка данных",
+    back: "‹ Поддержка",
+    meta_heading: "Документ",
+    meta: [
+      ["Приложение", "Formular"],
+      ["Платформы", "Android, iOS"],
+      ["Разработчик", "Andy Beardness"],
+      ["Контакт", "beardness.andy@gmail.com"],
+      ["Дата вступления в силу", "19 мая 2026"],
+      ["Последнее обновление", "19 мая 2026"]
+    ],
+    intro_heading: "Общие положения",
+    intro: "Настоящая Политика конфиденциальности описывает, как мобильное приложение Formular («приложение») обращается с пользовательской информацией. Устанавливая и используя приложение, вы соглашаетесь с условиями этой политики.",
+    sections_heading: "Подробности",
+    sections: [
+      [
+        "1. Какие данные обрабатывает приложение",
+        "<p>Приложение <strong>не собирает, не передаёт и не хранит никаких персональных данных на удалённых серверах</strong>. Всё, что вы создаёте внутри приложения — формулы, переменные, расчёты, история, группы, категории, шаблоны и пользовательские настройки — хранится <strong>локально на вашем устройстве</strong> в изолированном хранилище приложения (локальная база данных Room и системный DataStore).</p><p>Приложение не запрашивает ваше имя, email, номер телефона, геолокацию, контакты, камеру, микрофон, фотогалерею или какие-либо другие источники персональных данных.</p>"
+      ],
+      [
+        "2. Аналитика, телеметрия и реклама",
+        "<p>Приложение <strong>не</strong> использует:</p><ul><li>SDK аналитики (Firebase Analytics, Amplitude, AppMetrica и т. п.);</li><li>сервисы сбора крашей и логов (Crashlytics, Sentry и т. п.);</li><li>рекламные сети;</li><li>рекламные идентификаторы (IDFA, AAID);</li><li>трекеры и сторонние пиксели.</li></ul><p>Никакие события использования не покидают ваше устройство.</p>"
+      ],
+      [
+        "3. Сетевые соединения",
+        "<p>Приложение работает <strong>полностью офлайн</strong>. Во время обычной работы оно не отправляет и не получает данные по сети. Единственные исключения — явные переходы во внешние приложения, например открытие этой политики в браузере или переход на системный экран настроек языка. Эти переходы выполняются операционной системой; браузер или системное приложение, которое их обрабатывает, не входит в сферу действия данной политики.</p>"
+      ],
+      [
+        "4. Разрешения операционной системы",
+        "<p>Приложение <strong>не запрашивает разрешений во время работы</strong> ни на Android, ни на iOS. Смена языка интерфейса выполняется через встроенный системный экран настройки языка для каждого приложения; отдельных разрешений для этого не требуется.</p>"
+      ],
+      [
+        "5. Хранение и удаление данных",
+        '<p>Все ваши данные хранятся локально:</p><ul><li><strong>Android:</strong> во внутреннем хранилище приложения (<code>/data/data/andy.beardness.formular/</code>).</li><li><strong>iOS:</strong> в песочнице приложения (каталог <code>Documents/</code>).</li></ul><p>Вы можете удалить все данные приложения в любой момент:</p><ul><li>удалив приложение средствами операционной системы (Android: «Удалить»; iOS: «Удалить приложение») — все локальные данные удаляются вместе с приложением;</li><li>очистив данные приложения в настройках системы (Android: «Настройки → Приложения → Formular → Хранилище → Очистить данные»).</li></ul><p>После удаления приложения данные нельзя восстановить — у разработчика никогда не было их копии, потому что они никогда не покидали ваше устройство.</p>'
+      ],
+      [
+        "6. Передача данных третьим лицам",
+        "<p>Приложение <strong>не передаёт ваши данные третьим лицам</strong>, поскольку не имеет к ним доступа. Разработчик также не имеет доступа к содержимому вашего устройства.</p>"
+      ],
+      [
+        "7. Дети",
+        "<p>Приложение не предназначено специально для детей младше 13 лет и не содержит материалов, требующих возрастных ограничений. Поскольку персональные данные не собираются, специальные меры по соответствию COPPA не требуются.</p>"
+      ],
+      [
+        "8. Безопасность",
+        "<p>Поскольку данные никогда не покидают устройство, безопасность ограничена тем, что предоставляет сама операционная система: песочница приложения, шифрование хранилища на уровне устройства (если включено в настройках системы) и разблокировка устройства по биометрии или PIN-коду.</p>"
+      ],
+      [
+        "9. Изменения этой политики",
+        "<p>Если в будущих функциях изменится то, как обрабатываются данные, эта политика будет обновлена, а дата в начале документа — пересмотрена. Актуальная версия всегда доступна в репозитории приложения и через пункт «Политика конфиденциальности» в настройках приложения.</p>"
+      ],
+      [
+        "10. Контакты",
+        '<p>По вопросам конфиденциальности обращайтесь к разработчику:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "Связаться с нами",
+    email_title: "Электронная почта",
+    email_subject: "Formular — вопрос по политике конфиденциальности",
+    footer_1: "© Formular",
+    footer_2: "Политика конфиденциальности"
+  },
+
+  de: {
+    title: "Formular — Datenschutzerklärung",
+    heading: "Datenschutzerklärung",
+    subtitle: "Formular — Umgang mit Daten",
+    back: "‹ Support",
+    meta_heading: "Dokument",
+    meta: [
+      ["App", "Formular"],
+      ["Plattformen", "Android, iOS"],
+      ["Entwickler", "Andy Beardness"],
+      ["Kontakt", "beardness.andy@gmail.com"],
+      ["Gültig ab", "19. Mai 2026"],
+      ["Zuletzt aktualisiert", "19. Mai 2026"]
+    ],
+    intro_heading: "Überblick",
+    intro: "Diese Datenschutzerklärung beschreibt, wie die mobile App Formular (die „App“) mit Nutzerinformationen umgeht. Mit der Installation und Nutzung der App akzeptierst du die Bestimmungen dieser Erklärung.",
+    sections_heading: "Details",
+    sections: [
+      [
+        "1. Welche Daten die App verarbeitet",
+        "<p>Die App <strong>erhebt, überträgt oder speichert keinerlei personenbezogene Daten auf entfernten Servern</strong>. Alles, was du in der App erstellst — Formeln, Variablen, Berechnungen, Verlauf, Gruppen, Kategorien, Vorlagen und Nutzereinstellungen — wird <strong>lokal auf deinem Gerät</strong> im isolierten Speicher der App abgelegt (eine lokale Room-Datenbank und der System-DataStore).</p><p>Die App fragt weder deinen Namen, deine E-Mail-Adresse, deine Telefonnummer, deinen Standort, deine Kontakte, Kamera, Mikrofon, Fotomediathek noch eine andere Quelle personenbezogener Daten ab.</p>"
+      ],
+      [
+        "2. Analyse, Telemetrie und Werbung",
+        "<p>Die App nutzt <strong>nicht</strong>:</p><ul><li>Analyse-SDKs (Firebase Analytics, Amplitude, AppMetrica usw.);</li><li>Crash- und Log-Sammeldienste (Crashlytics, Sentry usw.);</li><li>Werbenetzwerke;</li><li>Werbe-IDs (IDFA, AAID);</li><li>Tracker oder Drittanbieter-Pixel.</li></ul><p>Keine Nutzungsereignisse verlassen dein Gerät.</p>"
+      ],
+      [
+        "3. Netzwerkverbindungen",
+        "<p>Die App arbeitet <strong>vollständig offline</strong>. Im normalen Betrieb sendet oder empfängt sie keine Daten über das Netzwerk. Einzige Ausnahmen sind explizite Übergaben an externe Apps — zum Beispiel das Öffnen dieser Erklärung im Browser oder der Aufruf der systemweiten Spracheinstellungen. Diese Übergaben werden vom Betriebssystem ausgeführt; der Browser oder die System-App, die sie verarbeitet, fällt nicht in den Geltungsbereich dieser Erklärung.</p>"
+      ],
+      [
+        "4. Betriebssystem-Berechtigungen",
+        "<p>Die App fragt weder unter Android noch unter iOS <strong>Laufzeitberechtigungen</strong> ab. Das Ändern der Anzeigesprache erfolgt über den integrierten Sprachkonfigurationsbildschirm des Systems für jede App; eine eigene Berechtigung ist nicht erforderlich.</p>"
+      ],
+      [
+        "5. Datenspeicherung und Löschung",
+        '<p>Alle deine Daten werden lokal gespeichert:</p><ul><li><strong>Android:</strong> im internen Speicher der App (<code>/data/data/andy.beardness.formular/</code>).</li><li><strong>iOS:</strong> in der App-Sandbox (Verzeichnis <code>Documents/</code>).</li></ul><p>Du kannst alle App-Daten jederzeit löschen, indem du:</p><ul><li>die App über dein Betriebssystem deinstallierst (Android: „Deinstallieren“; iOS: „App entfernen“) — alle lokalen Daten werden mit der App entfernt;</li><li>die App-Daten in den Systemeinstellungen löschst (Android: „Einstellungen → Apps → Formular → Speicher → Daten löschen“).</li></ul><p>Nach der Deinstallation können die Daten nicht wiederhergestellt werden — der Entwickler hatte nie eine Kopie davon, da die Daten dein Gerät nie verlassen haben.</p>'
+      ],
+      [
+        "6. Weitergabe an Dritte",
+        "<p>Die App <strong>gibt deine Daten nicht an Dritte weiter</strong>, weil sie keinen Zugriff darauf hat. Auch der Entwickler hat keinen Zugriff auf den Inhalt deines Geräts.</p>"
+      ],
+      [
+        "7. Kinder",
+        "<p>Die App richtet sich nicht gezielt an Kinder unter 13 Jahren und enthält keine Inhalte, die eine Altersfreigabe erfordern. Da keine personenbezogenen Daten erhoben werden, sind keine speziellen COPPA-Konformitätsmaßnahmen erforderlich.</p>"
+      ],
+      [
+        "8. Sicherheit",
+        "<p>Da Daten das Gerät nie verlassen, ist die Sicherheit auf das beschränkt, was das Betriebssystem selbst bietet: die App-Sandbox, die geräteseitige Speicherverschlüsselung (sofern in den Systemeinstellungen aktiviert) und das Entsperren des Geräts per Biometrie oder PIN.</p>"
+      ],
+      [
+        "9. Änderungen dieser Erklärung",
+        "<p>Wenn künftige Funktionen die Datenverarbeitung ändern, wird diese Erklärung aktualisiert und das Datum oben im Dokument entsprechend angepasst. Die aktuelle Fassung ist jederzeit im Repository der App sowie über den Eintrag „Datenschutzerklärung“ in den App-Einstellungen verfügbar.</p>"
+      ],
+      [
+        "10. Kontakt",
+        '<p>Bei Fragen zum Datenschutz wende dich an den Entwickler:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "Kontakt",
+    email_title: "E-Mail",
+    email_subject: "Formular — Frage zum Datenschutz",
+    footer_1: "© Formular",
+    footer_2: "Datenschutzerklärung"
+  },
+
+  fr: {
+    title: "Formular — Politique de confidentialité",
+    heading: "Politique de confidentialité",
+    subtitle: "Formular — traitement des données",
+    back: "‹ Assistance",
+    meta_heading: "Document",
+    meta: [
+      ["Application", "Formular"],
+      ["Plateformes", "Android, iOS"],
+      ["Développeur", "Andy Beardness"],
+      ["Contact", "beardness.andy@gmail.com"],
+      ["Date d'entrée en vigueur", "19 mai 2026"],
+      ["Dernière mise à jour", "19 mai 2026"]
+    ],
+    intro_heading: "Aperçu",
+    intro: "La présente Politique de confidentialité décrit la manière dont l'application mobile Formular (l'« application ») traite les informations des utilisateurs. En installant et en utilisant l'application, vous acceptez les conditions de cette politique.",
+    sections_heading: "Détails",
+    sections: [
+      [
+        "1. Données traitées par l'application",
+        "<p>L'application <strong>ne collecte, ne transmet ni ne stocke aucune donnée personnelle sur des serveurs distants</strong>. Tout ce que vous créez dans l'application — formules, variables, calculs, historique, groupes, catégories, modèles et préférences — est stocké <strong>localement sur votre appareil</strong>, dans le stockage isolé de l'application (base de données Room locale et DataStore système).</p><p>L'application ne demande ni votre nom, ni votre adresse e-mail, ni votre numéro de téléphone, ni votre localisation, ni vos contacts, ni l'accès à la caméra, au microphone, à la photothèque ou à toute autre source de données personnelles.</p>"
+      ],
+      [
+        "2. Analyse, télémétrie et publicité",
+        "<p>L'application <strong>n'utilise pas</strong> :</p><ul><li>de SDK d'analyse (Firebase Analytics, Amplitude, AppMetrica, etc.) ;</li><li>de services de collecte de plantages ou de journaux (Crashlytics, Sentry, etc.) ;</li><li>de régies publicitaires ;</li><li>d'identifiants publicitaires (IDFA, AAID) ;</li><li>de traqueurs ou de pixels tiers.</li></ul><p>Aucun événement d'utilisation ne quitte votre appareil.</p>"
+      ],
+      [
+        "3. Connexions réseau",
+        "<p>L'application fonctionne <strong>entièrement hors ligne</strong>. En fonctionnement normal, elle n'envoie ni ne reçoit de données via le réseau. Les seules exceptions sont les transferts explicites vers des applications externes — par exemple l'ouverture de cette politique dans votre navigateur ou l'accès à l'écran de réglage de la langue du système. Ces transferts sont effectués par le système d'exploitation ; le navigateur ou l'application système qui les traite ne relève pas de cette politique.</p>"
+      ],
+      [
+        "4. Autorisations du système d'exploitation",
+        "<p>L'application ne demande <strong>aucune autorisation à l'exécution</strong> sur Android ou iOS. Le changement de langue de l'interface s'effectue via l'écran des réglages de langue par application intégré au système ; aucune autorisation distincte n'est requise.</p>"
+      ],
+      [
+        "5. Stockage et suppression des données",
+        '<p>Toutes vos données sont stockées localement :</p><ul><li><strong>Android :</strong> dans le stockage interne de l\'application (<code>/data/data/andy.beardness.formular/</code>).</li><li><strong>iOS :</strong> dans le bac à sable de l\'application (répertoire <code>Documents/</code>).</li></ul><p>Vous pouvez supprimer toutes les données de l\'application à tout moment en :</p><ul><li>désinstallant l\'application depuis votre système d\'exploitation (Android : « Désinstaller » ; iOS : « Supprimer l\'app ») — toutes les données locales sont supprimées avec l\'application ;</li><li>effaçant les données de l\'application via les réglages système (Android : « Paramètres → Applications → Formular → Stockage → Effacer les données »).</li></ul><p>Une fois l\'application désinstallée, les données ne peuvent être récupérées — le développeur n\'en a jamais eu de copie, car elles n\'ont jamais quitté votre appareil.</p>'
+      ],
+      [
+        "6. Partage avec des tiers",
+        "<p>L'application <strong>ne partage pas vos données avec des tiers</strong>, car elle n'y a pas accès. Le développeur n'a pas non plus accès au contenu de votre appareil.</p>"
+      ],
+      [
+        "7. Enfants",
+        "<p>L'application n'est pas spécifiquement destinée aux enfants de moins de 13 ans et ne contient pas de contenu nécessitant des restrictions d'âge. Aucune donnée personnelle n'étant collectée, aucune mesure spécifique de conformité COPPA n'est requise.</p>"
+      ],
+      [
+        "8. Sécurité",
+        "<p>Les données ne quittant jamais l'appareil, la sécurité dépend de ce que fournit le système d'exploitation lui-même : le bac à sable de l'application, le chiffrement du stockage au niveau de l'appareil (lorsqu'il est activé dans les réglages) et le déverrouillage par biométrie ou code PIN.</p>"
+      ],
+      [
+        "9. Modifications de cette politique",
+        "<p>Si des fonctionnalités futures modifient la manière dont les données sont traitées, cette politique sera mise à jour et la date en haut du document sera révisée. La version actuelle est toujours disponible dans le dépôt de l'application et via l'entrée « Politique de confidentialité » des réglages de l'application.</p>"
+      ],
+      [
+        "10. Contact",
+        '<p>Pour toute question relative à la confidentialité, contactez le développeur :</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "Nous contacter",
+    email_title: "E-mail",
+    email_subject: "Formular — question sur la confidentialité",
+    footer_1: "© Formular",
+    footer_2: "Politique de confidentialité"
+  },
+
+  es: {
+    title: "Formular — Política de privacidad",
+    heading: "Política de privacidad",
+    subtitle: "Formular — tratamiento de datos",
+    back: "‹ Soporte",
+    meta_heading: "Documento",
+    meta: [
+      ["Aplicación", "Formular"],
+      ["Plataformas", "Android, iOS"],
+      ["Desarrollador", "Andy Beardness"],
+      ["Contacto", "beardness.andy@gmail.com"],
+      ["Fecha de vigencia", "19 de mayo de 2026"],
+      ["Última actualización", "19 de mayo de 2026"]
+    ],
+    intro_heading: "Resumen",
+    intro: "Esta Política de privacidad describe cómo la aplicación móvil Formular (la « aplicación ») gestiona la información de los usuarios. Al instalar y utilizar la aplicación, aceptas los términos de esta política.",
+    sections_heading: "Detalles",
+    sections: [
+      [
+        "1. Qué datos procesa la aplicación",
+        "<p>La aplicación <strong>no recopila, transmite ni almacena ningún dato personal en servidores remotos</strong>. Todo lo que creas dentro de la aplicación — fórmulas, variables, cálculos, historial, grupos, categorías, plantillas y preferencias — se almacena <strong>localmente en tu dispositivo</strong>, en el almacenamiento aislado de la aplicación (una base de datos Room local y el DataStore del sistema).</p><p>La aplicación no solicita tu nombre, correo electrónico, número de teléfono, ubicación, contactos, cámara, micrófono, biblioteca de fotos ni ninguna otra fuente de datos personales.</p>"
+      ],
+      [
+        "2. Analítica, telemetría y publicidad",
+        "<p>La aplicación <strong>no</strong> utiliza:</p><ul><li>SDK de analítica (Firebase Analytics, Amplitude, AppMetrica, etc.);</li><li>servicios de recopilación de fallos y registros (Crashlytics, Sentry, etc.);</li><li>redes publicitarias;</li><li>identificadores publicitarios (IDFA, AAID);</li><li>rastreadores o píxeles de terceros.</li></ul><p>Ningún evento de uso sale de tu dispositivo.</p>"
+      ],
+      [
+        "3. Conexiones de red",
+        "<p>La aplicación funciona <strong>completamente sin conexión</strong>. Durante su funcionamiento normal, no envía ni recibe datos por la red. Las únicas excepciones son los traspasos explícitos a aplicaciones externas — por ejemplo, abrir esta política en el navegador o acceder a la pantalla de ajustes de idioma del sistema. Esos traspasos los realiza el sistema operativo; el navegador o la aplicación del sistema que los gestiona queda fuera del ámbito de esta política.</p>"
+      ],
+      [
+        "4. Permisos del sistema operativo",
+        "<p>La aplicación <strong>no solicita permisos en tiempo de ejecución</strong> ni en Android ni en iOS. El cambio del idioma de la interfaz se realiza a través de la pantalla de ajustes de idioma por aplicación integrada en el sistema; no se requiere un permiso aparte.</p>"
+      ],
+      [
+        "5. Almacenamiento y eliminación de datos",
+        '<p>Todos tus datos se almacenan localmente:</p><ul><li><strong>Android:</strong> en el almacenamiento interno de la aplicación (<code>/data/data/andy.beardness.formular/</code>).</li><li><strong>iOS:</strong> dentro de la zona de aislamiento de la aplicación (directorio <code>Documents/</code>).</li></ul><p>Puedes eliminar todos los datos de la aplicación en cualquier momento:</p><ul><li>desinstalando la aplicación desde tu sistema operativo (Android: « Desinstalar »; iOS: « Eliminar app ») — todos los datos locales se eliminan junto con la aplicación;</li><li>borrando los datos de la aplicación desde los ajustes del sistema (Android: « Ajustes → Aplicaciones → Formular → Almacenamiento → Borrar datos »).</li></ul><p>Una vez desinstalada la aplicación, los datos no pueden recuperarse — el desarrollador nunca ha tenido una copia, porque nunca salieron de tu dispositivo.</p>'
+      ],
+      [
+        "6. Compartir datos con terceros",
+        "<p>La aplicación <strong>no comparte tus datos con terceros</strong>, porque no tiene acceso a ellos. El desarrollador tampoco tiene acceso al contenido de tu dispositivo.</p>"
+      ],
+      [
+        "7. Niños",
+        "<p>La aplicación no está dirigida específicamente a menores de 13 años y no contiene contenido que requiera restricciones de edad. Como no se recopilan datos personales, no se requieren medidas específicas de cumplimiento de la COPPA.</p>"
+      ],
+      [
+        "8. Seguridad",
+        "<p>Como los datos nunca salen del dispositivo, la seguridad está limitada por lo que ofrece el propio sistema operativo: el aislamiento de la aplicación, el cifrado del almacenamiento a nivel de dispositivo (cuando está activado en los ajustes del sistema) y el desbloqueo del dispositivo mediante biometría o PIN.</p>"
+      ],
+      [
+        "9. Cambios en esta política",
+        "<p>Si futuras funciones cambian la forma en que se gestionan los datos, esta política se actualizará y la fecha en la parte superior del documento se revisará. La versión actual siempre está disponible en el repositorio de la aplicación y a través del elemento « Política de privacidad » en los ajustes de la aplicación.</p>"
+      ],
+      [
+        "10. Contacto",
+        '<p>Para preguntas relacionadas con la privacidad, contacta con el desarrollador:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "Contáctanos",
+    email_title: "Correo electrónico",
+    email_subject: "Formular — consulta sobre privacidad",
+    footer_1: "© Formular",
+    footer_2: "Política de privacidad"
+  },
+
+  hi: {
+    title: "Formular — गोपनीयता नीति",
+    heading: "गोपनीयता नीति",
+    subtitle: "Formular — डेटा प्रबंधन",
+    back: "‹ सहायता",
+    meta_heading: "दस्तावेज़",
+    meta: [
+      ["ऐप", "Formular"],
+      ["प्लेटफ़ॉर्म", "Android, iOS"],
+      ["डेवलपर", "Andy Beardness"],
+      ["संपर्क", "beardness.andy@gmail.com"],
+      ["प्रभावी तिथि", "19 मई 2026"],
+      ["अंतिम अद्यतन", "19 मई 2026"]
+    ],
+    intro_heading: "अवलोकन",
+    intro: "यह गोपनीयता नीति बताती है कि Formular मोबाइल ऐप («ऐप») उपयोगकर्ता की जानकारी को कैसे संभालता है। ऐप को इंस्टॉल करके और उपयोग करके आप इस नीति की शर्तों से सहमत होते हैं।",
+    sections_heading: "विवरण",
+    sections: [
+      [
+        "1. ऐप किस डेटा को संसाधित करता है",
+        "<p>ऐप <strong>किसी भी व्यक्तिगत डेटा को दूरस्थ सर्वर पर एकत्र, स्थानांतरित या संग्रहीत नहीं करता है</strong>। आप ऐप के अंदर जो कुछ भी बनाते हैं — सूत्र, चर, गणनाएँ, इतिहास, समूह, श्रेणियाँ, टेम्पलेट और प्राथमिकताएँ — सब कुछ <strong>आपके डिवाइस पर स्थानीय रूप से</strong> ऐप के पृथक संग्रहण में (एक स्थानीय Room डेटाबेस और सिस्टम DataStore में) रखा जाता है।</p><p>ऐप आपका नाम, ईमेल, फ़ोन नंबर, स्थान, संपर्क, कैमरा, माइक्रोफ़ोन, फ़ोटो लाइब्रेरी या किसी अन्य व्यक्तिगत डेटा स्रोत का अनुरोध नहीं करता है।</p>"
+      ],
+      [
+        "2. एनालिटिक्स, टेलीमेट्री और विज्ञापन",
+        "<p>ऐप का <strong>उपयोग नहीं</strong> करता है:</p><ul><li>एनालिटिक्स SDK (Firebase Analytics, Amplitude, AppMetrica आदि);</li><li>क्रैश और लॉग संग्रह सेवाएँ (Crashlytics, Sentry आदि);</li><li>विज्ञापन नेटवर्क;</li><li>विज्ञापन पहचानकर्ता (IDFA, AAID);</li><li>ट्रैकर या तीसरे पक्ष के पिक्सेल।</li></ul><p>कोई भी उपयोग ईवेंट आपके डिवाइस को नहीं छोड़ता।</p>"
+      ],
+      [
+        "3. नेटवर्क कनेक्शन",
+        "<p>ऐप <strong>पूरी तरह ऑफ़लाइन</strong> काम करता है। सामान्य संचालन के दौरान यह नेटवर्क पर कोई डेटा भेजता या प्राप्त नहीं करता। अपवाद केवल बाहरी ऐप्स को स्पष्ट हैंडऑफ़ हैं — उदाहरण के लिए, इस नीति को आपके ब्राउज़र में खोलना या सिस्टम भाषा सेटिंग्स स्क्रीन खोलना। ये हैंडऑफ़ ऑपरेटिंग सिस्टम द्वारा किए जाते हैं; उन्हें संभालने वाला ब्राउज़र या सिस्टम ऐप इस नीति के दायरे से बाहर है।</p>"
+      ],
+      [
+        "4. ऑपरेटिंग सिस्टम की अनुमतियाँ",
+        "<p>ऐप Android या iOS पर <strong>कोई रनटाइम अनुमति नहीं</strong> माँगता। इंटरफ़ेस भाषा बदलना सिस्टम के अंतर्निहित प्रति-ऐप भाषा सेटिंग्स स्क्रीन के माध्यम से किया जाता है; इसके लिए अलग अनुमति की आवश्यकता नहीं है।</p>"
+      ],
+      [
+        "5. डेटा संग्रहण और विलोपन",
+        '<p>आपका सारा डेटा स्थानीय रूप से संग्रहीत है:</p><ul><li><strong>Android:</strong> ऐप के आंतरिक संग्रहण में (<code>/data/data/andy.beardness.formular/</code>)।</li><li><strong>iOS:</strong> ऐप सैंडबॉक्स के अंदर (<code>Documents/</code> निर्देशिका)।</li></ul><p>आप कभी भी ऐप का सारा डेटा हटा सकते हैं:</p><ul><li>अपने ऑपरेटिंग सिस्टम के माध्यम से ऐप को अनइंस्टॉल करके (Android: «अनइंस्टॉल»; iOS: «ऐप हटाएँ») — ऐप के साथ ही सारा स्थानीय डेटा हटा दिया जाता है;</li><li>सिस्टम सेटिंग्स से ऐप का डेटा साफ़ करके (Android: «सेटिंग्स → ऐप्स → Formular → संग्रहण → डेटा साफ़ करें»)।</li></ul><p>ऐप को अनइंस्टॉल करने के बाद डेटा को पुनर्प्राप्त नहीं किया जा सकता — डेवलपर के पास इसकी कोई प्रति कभी नहीं थी, क्योंकि यह डेटा कभी आपके डिवाइस से बाहर नहीं गया।</p>'
+      ],
+      [
+        "6. तीसरे पक्षों के साथ डेटा साझा करना",
+        "<p>ऐप <strong>आपका डेटा किसी तीसरे पक्ष के साथ साझा नहीं करता</strong>, क्योंकि उसकी इस तक पहुँच ही नहीं है। डेवलपर के पास भी आपके डिवाइस की सामग्री तक पहुँच नहीं है।</p>"
+      ],
+      [
+        "7. बच्चे",
+        "<p>ऐप विशेष रूप से 13 वर्ष से कम आयु के बच्चों के लिए नहीं है, और इसमें ऐसी सामग्री नहीं है जिसके लिए आयु प्रतिबंध आवश्यक हो। चूंकि कोई व्यक्तिगत डेटा एकत्र नहीं किया जाता, इसलिए COPPA-अनुपालन के विशेष उपायों की आवश्यकता नहीं है।</p>"
+      ],
+      [
+        "8. सुरक्षा",
+        "<p>चूंकि डेटा कभी डिवाइस से बाहर नहीं जाता, सुरक्षा वही है जो स्वयं ऑपरेटिंग सिस्टम प्रदान करता है: ऐप सैंडबॉक्स, डिवाइस-स्तरीय संग्रहण एन्क्रिप्शन (जब सिस्टम सेटिंग्स में सक्षम हो), और बायोमेट्रिक या PIN द्वारा डिवाइस अनलॉक।</p>"
+      ],
+      [
+        "9. इस नीति में परिवर्तन",
+        "<p>यदि भविष्य की सुविधाएँ डेटा प्रबंधन के तरीके को बदलती हैं, तो यह नीति अद्यतन की जाएगी और दस्तावेज़ के शीर्ष पर दी गई तिथि संशोधित कर दी जाएगी। वर्तमान संस्करण हमेशा ऐप के रिपॉज़िटरी में और ऐप सेटिंग्स में «गोपनीयता नीति» आइटम के माध्यम से उपलब्ध रहता है।</p>"
+      ],
+      [
+        "10. संपर्क",
+        '<p>गोपनीयता संबंधी प्रश्नों के लिए डेवलपर से संपर्क करें:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "हमसे संपर्क करें",
+    email_title: "ईमेल",
+    email_subject: "Formular — गोपनीयता संबंधी प्रश्न",
+    footer_1: "© Formular",
+    footer_2: "गोपनीयता नीति"
+  },
+
+  ko: {
+    title: "Formular — 개인정보 처리방침",
+    heading: "개인정보 처리방침",
+    subtitle: "Formular — 데이터 처리 방침",
+    back: "‹ 지원",
+    meta_heading: "문서",
+    meta: [
+      ["앱", "Formular"],
+      ["플랫폼", "Android, iOS"],
+      ["개발자", "Andy Beardness"],
+      ["연락처", "beardness.andy@gmail.com"],
+      ["시행일", "2026년 5월 19일"],
+      ["최종 수정일", "2026년 5월 19일"]
+    ],
+    intro_heading: "개요",
+    intro: "본 개인정보 처리방침은 모바일 앱 Formular(이하 “앱”)가 사용자 정보를 어떻게 취급하는지 설명합니다. 앱을 설치하고 사용함으로써 사용자는 본 방침의 조항에 동의하게 됩니다.",
+    sections_heading: "세부 사항",
+    sections: [
+      [
+        "1. 앱이 처리하는 데이터",
+        "<p>앱은 <strong>어떠한 개인 데이터도 원격 서버에서 수집, 전송 또는 저장하지 않습니다</strong>. 앱 내부에서 생성하는 모든 항목 — 수식, 변수, 계산, 기록, 그룹, 카테고리, 템플릿, 사용자 설정 — 은 앱의 격리된 저장소(로컬 Room 데이터베이스와 시스템 DataStore)에 <strong>기기 내부에 로컬로</strong> 저장됩니다.</p><p>앱은 사용자의 이름, 이메일, 전화번호, 위치, 연락처, 카메라, 마이크, 사진 라이브러리 또는 그 밖의 개인 데이터 출처를 요구하지 않습니다.</p>"
+      ],
+      [
+        "2. 분석, 텔레메트리, 광고",
+        "<p>앱은 다음을 <strong>사용하지 않습니다</strong>:</p><ul><li>분석 SDK(Firebase Analytics, Amplitude, AppMetrica 등);</li><li>크래시 및 로그 수집 서비스(Crashlytics, Sentry 등);</li><li>광고 네트워크;</li><li>광고 식별자(IDFA, AAID);</li><li>트래커 또는 제3자 픽셀.</li></ul><p>사용 이벤트는 기기를 벗어나지 않습니다.</p>"
+      ],
+      [
+        "3. 네트워크 연결",
+        "<p>앱은 <strong>완전히 오프라인</strong>으로 동작합니다. 정상 작동 중에는 네트워크를 통해 데이터를 보내거나 받지 않습니다. 유일한 예외는 외부 앱으로의 명시적 전환입니다 — 예를 들어 본 방침을 브라우저로 여는 경우나 시스템 언어 설정 화면을 여는 경우. 이러한 전환은 운영체제가 수행하며, 이를 처리하는 브라우저나 시스템 앱은 본 방침의 적용 범위에 포함되지 않습니다.</p>"
+      ],
+      [
+        "4. 운영체제 권한",
+        "<p>앱은 Android 또는 iOS에서 <strong>어떠한 런타임 권한도 요청하지 않습니다</strong>. 인터페이스 언어 변경은 운영체제에 내장된 앱별 언어 설정 화면을 통해 수행되며, 별도의 권한이 필요하지 않습니다.</p>"
+      ],
+      [
+        "5. 데이터 저장 및 삭제",
+        '<p>모든 데이터는 로컬에 저장됩니다:</p><ul><li><strong>Android:</strong> 앱 내부 저장소(<code>/data/data/andy.beardness.formular/</code>).</li><li><strong>iOS:</strong> 앱 샌드박스 내부(<code>Documents/</code> 디렉터리).</li></ul><p>다음과 같은 방법으로 언제든지 모든 앱 데이터를 삭제할 수 있습니다:</p><ul><li>운영체제를 통해 앱을 제거(Android: “제거”; iOS: “앱 삭제”) — 모든 로컬 데이터가 앱과 함께 제거됩니다;</li><li>시스템 설정에서 앱 데이터를 지움(Android: “설정 → 앱 → Formular → 저장공간 → 데이터 지우기”).</li></ul><p>앱을 제거한 후에는 데이터를 복구할 수 없습니다 — 데이터가 기기를 떠난 적이 없으므로 개발자는 사본을 가진 적이 없습니다.</p>'
+      ],
+      [
+        "6. 제3자와의 데이터 공유",
+        "<p>앱은 데이터를 가질 수 없기 때문에 <strong>제3자와 데이터를 공유하지 않습니다</strong>. 개발자 또한 사용자 기기의 콘텐츠에 접근할 수 없습니다.</p>"
+      ],
+      [
+        "7. 어린이",
+        "<p>본 앱은 만 13세 미만 어린이를 특정 대상으로 하지 않으며, 연령 제한이 필요한 콘텐츠를 포함하지 않습니다. 어떠한 개인 데이터도 수집하지 않으므로 별도의 COPPA 준수 조치가 필요하지 않습니다.</p>"
+      ],
+      [
+        "8. 보안",
+        "<p>데이터가 기기를 벗어나지 않기 때문에, 보안 수준은 운영체제 자체가 제공하는 범위 — 앱 샌드박스, 기기 단위 저장소 암호화(시스템 설정에서 활성화된 경우), 생체 인식 또는 PIN을 통한 기기 잠금 해제 — 로 한정됩니다.</p>"
+      ],
+      [
+        "9. 본 방침의 변경",
+        "<p>향후 기능으로 데이터 처리 방식이 바뀌면 본 방침은 갱신되고 문서 상단의 날짜가 수정됩니다. 최신 버전은 항상 앱 저장소와 앱 설정의 “개인정보 처리방침” 항목에서 확인할 수 있습니다.</p>"
+      ],
+      [
+        "10. 문의",
+        '<p>개인정보 관련 문의는 개발자에게 연락 주세요:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "문의하기",
+    email_title: "이메일",
+    email_subject: "Formular — 개인정보 관련 문의",
+    footer_1: "© Formular",
+    footer_2: "개인정보 처리방침"
+  },
+
+  zh: {
+    title: "Formular — 隐私政策",
+    heading: "隐私政策",
+    subtitle: "Formular — 数据处理说明",
+    back: "‹ 支持",
+    meta_heading: "文档",
+    meta: [
+      ["应用", "Formular"],
+      ["平台", "Android、iOS"],
+      ["开发者", "Andy Beardness"],
+      ["联系方式", "beardness.andy@gmail.com"],
+      ["生效日期", "2026 年 5 月 19 日"],
+      ["最近更新", "2026 年 5 月 19 日"]
+    ],
+    intro_heading: "概述",
+    intro: "本隐私政策说明 Formular 移动应用(“应用”)如何处理用户信息。安装并使用本应用即表示您同意本政策的条款。",
+    sections_heading: "详细内容",
+    sections: [
+      [
+        "1. 应用处理的数据",
+        "<p>应用<strong>不会在远程服务器上收集、传输或存储任何个人数据</strong>。您在应用内创建的一切内容 — 公式、变量、计算、历史记录、分组、分类、模板和用户偏好 — 都<strong>仅存储在您的设备本地</strong>,保存在应用的沙箱存储中(本地 Room 数据库与系统 DataStore)。</p><p>应用不会请求您的姓名、电子邮件、电话号码、位置、通讯录、相机、麦克风、相册或任何其他个人数据来源。</p>"
+      ],
+      [
+        "2. 分析、遥测与广告",
+        "<p>应用<strong>不</strong>使用:</p><ul><li>分析 SDK(Firebase Analytics、Amplitude、AppMetrica 等);</li><li>崩溃与日志收集服务(Crashlytics、Sentry 等);</li><li>广告网络;</li><li>广告标识符(IDFA、AAID);</li><li>追踪器或第三方像素。</li></ul><p>没有任何使用事件离开您的设备。</p>"
+      ],
+      [
+        "3. 网络连接",
+        "<p>应用<strong>完全离线运行</strong>。在正常运行期间,它不会通过网络发送或接收数据。唯一的例外是显式地切换到外部应用 — 例如在浏览器中打开本政策,或打开系统语言设置界面。这些切换由操作系统执行;处理它们的浏览器或系统应用不在本政策的范围之内。</p>"
+      ],
+      [
+        "4. 操作系统权限",
+        "<p>应用在 Android 与 iOS 上均<strong>不请求运行时权限</strong>。界面语言的切换通过系统内置的“按应用语言设置”界面完成,无需单独的权限。</p>"
+      ],
+      [
+        "5. 数据存储与删除",
+        '<p>您的所有数据都存储在本地:</p><ul><li><strong>Android:</strong> 在应用的内部存储中(<code>/data/data/andy.beardness.formular/</code>)。</li><li><strong>iOS:</strong> 在应用沙箱内(<code>Documents/</code> 目录)。</li></ul><p>您可以随时删除所有应用数据:</p><ul><li>通过操作系统卸载应用(Android:“卸载”;iOS:“删除 App”)— 所有本地数据将随应用一并被移除;</li><li>通过系统设置清除应用数据(Android:“设置 → 应用 → Formular → 存储 → 清除数据”)。</li></ul><p>应用一旦被卸载,数据将无法恢复 — 开发者从未持有任何副本,因为数据从未离开过您的设备。</p>'
+      ],
+      [
+        "6. 与第三方共享数据",
+        "<p>应用<strong>不会与第三方共享您的数据</strong>,因为它无法访问这些数据。开发者同样无法访问您设备中的内容。</p>"
+      ],
+      [
+        "7. 儿童",
+        "<p>本应用并非专门面向 13 岁以下儿童,且不包含需要年龄限制的内容。由于未收集任何个人数据,因此不需要专门的 COPPA 合规措施。</p>"
+      ],
+      [
+        "8. 安全",
+        "<p>由于数据从未离开设备,安全性以操作系统本身所提供的能力为边界:应用沙箱、设备级存储加密(在系统设置中启用时)以及通过生物识别或 PIN 解锁设备。</p>"
+      ],
+      [
+        "9. 本政策的变更",
+        "<p>如果未来的功能改变数据的处理方式,本政策将进行更新,文档顶部的日期也会相应修改。当前版本始终可在应用的代码仓库以及应用设置中的“隐私政策”项中查看。</p>"
+      ],
+      [
+        "10. 联系方式",
+        '<p>如对隐私问题有疑问,请联系开发者:</p><p><strong>Andy Beardness</strong><br><a href="mailto:beardness.andy@gmail.com">beardness.andy@gmail.com</a></p>'
+      ]
+    ],
+    contact_heading: "联系我们",
+    email_title: "电子邮件",
+    email_subject: "Formular — 隐私问题咨询",
+    footer_1: "© Formular",
+    footer_2: "隐私政策"
+  }
+};
+
+const SUPPORTED = Object.keys(I18N);
+
+function pickLang() {
+  const params = new URLSearchParams(location.search);
+  const fromUrl = params.get("lang");
+  if (fromUrl && SUPPORTED.includes(fromUrl)) return fromUrl;
+  const saved = localStorage.getItem("formular_support_lang");
+  if (saved && SUPPORTED.includes(saved)) return saved;
+  const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"]);
+  for (const l of langs) {
+    const short = (l || "").slice(0, 2).toLowerCase();
+    if (SUPPORTED.includes(short)) return short;
+  }
+  return "en";
+}
+
+function apply(lang) {
+  const dict = I18N[lang] || I18N.en;
+  document.documentElement.lang = lang;
+  document.title = dict.title;
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] !== undefined) el.textContent = dict[key];
+  });
+
+  const metaRoot = document.getElementById("metaList");
+  metaRoot.innerHTML = "";
+  for (const [k, v] of dict.meta) {
+    const row = document.createElement("div");
+    row.className = "meta-row";
+    const kEl = document.createElement("span");
+    kEl.className = "k";
+    kEl.textContent = k;
+    const vEl = document.createElement("span");
+    vEl.className = "v";
+    vEl.textContent = v;
+    row.appendChild(kEl);
+    row.appendChild(vEl);
+    metaRoot.appendChild(row);
+  }
+
+  const sectionsRoot = document.getElementById("sections");
+  sectionsRoot.innerHTML = "";
+  for (const [t, body] of dict.sections) {
+    const art = document.createElement("article");
+    const h = document.createElement("h3");
+    h.textContent = t;
+    const wrap = document.createElement("div");
+    wrap.innerHTML = body;
+    art.appendChild(h);
+    art.appendChild(wrap);
+    sectionsRoot.appendChild(art);
+  }
+
+  const subject = encodeURIComponent(dict.email_subject);
+  document.getElementById("emailRow").href = "mailto:beardness.andy@gmail.com?subject=" + subject;
+  document.getElementById("langSelect").value = lang;
+}
+
+const initial = pickLang();
+apply(initial);
+
+document.getElementById("langSelect").addEventListener("change", e => {
+  const lang = e.target.value;
+  localStorage.setItem("formular_support_lang", lang);
+  const url = new URL(location.href);
+  url.searchParams.set("lang", lang);
+  history.replaceState(null, "", url);
+  apply(lang);
+});
+</script>
+</body>
+</html>
