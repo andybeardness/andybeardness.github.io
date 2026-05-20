@@ -190,6 +190,17 @@
       </a>
     </section>
 
+    <h2 data-i18n="legal_heading"></h2>
+    <section>
+      <a class="row" id="privacyRow" href="/formular/privacy.html">
+        <span class="icon">🔒</span>
+        <span class="body">
+          <div class="title" data-i18n="privacy_title"></div>
+        </span>
+        <span class="chev">›</span>
+      </a>
+    </section>
+
     <h2 data-i18n="faq_heading"></h2>
     <section id="faq"></section>
 
@@ -209,6 +220,8 @@ const I18N = {
     contact_heading: "Contact us",
     email_title: "Email",
     email_subject: "Formular — support request",
+    legal_heading: "Legal",
+    privacy_title: "Privacy Policy",
     faq_heading: "Frequently asked questions",
     faq: [
       ["How do I create my own formula?", "Tap the “+” in the top right of the home screen. Enter a name, add variables (symbol, name, unit) and write the expression. Save — the formula appears in your list, ready to use."],
@@ -229,6 +242,8 @@ const I18N = {
     contact_heading: "Связаться с нами",
     email_title: "Электронная почта",
     email_subject: "Formular — поддержка",
+    legal_heading: "Документы",
+    privacy_title: "Политика конфиденциальности",
     faq_heading: "Частые вопросы",
     faq: [
       ["Как создать свою формулу?", "На главном экране нажмите «+» в правом верхнем углу. Введите название, добавьте переменные (символ, имя, единицу измерения) и запишите выражение. Сохраните — формула появится в списке и будет готова к расчёту."],
@@ -249,6 +264,8 @@ const I18N = {
     contact_heading: "Kontakt",
     email_title: "E-Mail",
     email_subject: "Formular — Supportanfrage",
+    legal_heading: "Rechtliches",
+    privacy_title: "Datenschutzerklärung",
     faq_heading: "Häufige Fragen",
     faq: [
       ["Wie erstelle ich eine eigene Formel?", "Tippe oben rechts auf dem Startbildschirm auf „+“. Gib einen Namen ein, füge Variablen hinzu (Symbol, Name, Einheit) und schreibe den Ausdruck. Speichern — die Formel erscheint in der Liste und ist einsatzbereit."],
@@ -269,6 +286,8 @@ const I18N = {
     contact_heading: "Nous contacter",
     email_title: "E-mail",
     email_subject: "Formular — demande d'assistance",
+    legal_heading: "Mentions légales",
+    privacy_title: "Politique de confidentialité",
     faq_heading: "Questions fréquentes",
     faq: [
       ["Comment créer ma propre formule ?", "Appuyez sur le « + » en haut à droite de l'écran d'accueil. Saisissez un nom, ajoutez des variables (symbole, nom, unité) et écrivez l'expression. Enregistrez — la formule apparaît dans votre liste, prête à l'emploi."],
@@ -289,6 +308,8 @@ const I18N = {
     contact_heading: "Contáctanos",
     email_title: "Correo electrónico",
     email_subject: "Formular — solicitud de soporte",
+    legal_heading: "Legal",
+    privacy_title: "Política de privacidad",
     faq_heading: "Preguntas frecuentes",
     faq: [
       ["¿Cómo creo mi propia fórmula?", "Toca el « + » en la esquina superior derecha de la pantalla principal. Introduce un nombre, añade variables (símbolo, nombre, unidad) y escribe la expresión. Guarda — la fórmula aparecerá en tu lista, lista para usar."],
@@ -309,6 +330,8 @@ const I18N = {
     contact_heading: "हमसे संपर्क करें",
     email_title: "ईमेल",
     email_subject: "Formular — सहायता अनुरोध",
+    legal_heading: "कानूनी",
+    privacy_title: "गोपनीयता नीति",
     faq_heading: "अक्सर पूछे जाने वाले प्रश्न",
     faq: [
       ["मैं अपना सूत्र कैसे बनाऊँ?", "होम स्क्रीन के ऊपरी दाएँ कोने में « + » दबाएँ। नाम दर्ज करें, चर जोड़ें (चिह्न, नाम, इकाई) और अभिव्यक्ति लिखें। सहेजें — सूत्र आपकी सूची में दिखाई देगा और उपयोग के लिए तैयार होगा।"],
@@ -329,6 +352,8 @@ const I18N = {
     contact_heading: "문의하기",
     email_title: "이메일",
     email_subject: "Formular — 지원 문의",
+    legal_heading: "법적 고지",
+    privacy_title: "개인정보 처리방침",
     faq_heading: "자주 묻는 질문",
     faq: [
       ["나만의 수식을 어떻게 만드나요?", "홈 화면 오른쪽 위의 « + »를 누르세요. 이름을 입력하고 변수(기호, 이름, 단위)를 추가한 뒤 수식을 작성하세요. 저장하면 목록에 추가되어 바로 사용할 수 있습니다."],
@@ -349,6 +374,8 @@ const I18N = {
     contact_heading: "联系我们",
     email_title: "电子邮件",
     email_subject: "Formular — 支持请求",
+    legal_heading: "法律信息",
+    privacy_title: "隐私政策",
     faq_heading: "常见问题",
     faq: [
       ["如何创建自己的公式?", "在主屏幕右上角点击 « + »。输入名称,添加变量(符号、名称、单位),并写下表达式。保存后,公式会出现在列表中,随时可用。"],
@@ -402,6 +429,7 @@ function apply(lang) {
   }
   const subject = encodeURIComponent(dict.email_subject);
   document.getElementById("emailRow").href = "mailto:beardness.andy.dev@gmail.com?subject=" + subject;
+  document.getElementById("privacyRow").href = "/formular/privacy.html?lang=" + lang;
   document.getElementById("langSelect").value = lang;
 }
 
