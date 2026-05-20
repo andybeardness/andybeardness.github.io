@@ -45,7 +45,7 @@ Each project lives in its own folder. The folder name is the URL slug.
   page works in isolation.
 - All pages share these CSS variables: `--bg #0f1115`, `--fg #e7eaf0`,
   `--muted #8b93a7`, `--card #171a21`, `--border #242833`, `--accent #7aa2f7`.
-- Contact email: `beardness.andy@gmail.com` (referenced from all pages).
+- Contact email: `beardness.andy.dev@gmail.com` (referenced from all pages).
 - Privacy policy template assumes **no remote data collection** — adjust per
   project if that changes (analytics SDKs, accounts, cloud sync, etc.).
 - Set the real "Effective date" on each privacy page before submitting to a
