@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/mathix/">
+  <title>Mathix — 모든 학생을 위한 고유한 수학 시험</title>
+  <meta name="description" content="하나의 템플릿, 모든 학생을 위한 고유한 버전, 그리고 같은 PDF에 있는 교사용 정답지. 진짜 실력을 측정하세요 — 채점은 몇 분이면 됩니다.">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) {
+          t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="alternate" hreflang="en" href="/mathix/">
+  <link rel="alternate" hreflang="ru" href="/mathix/ru/">
+  <link rel="alternate" hreflang="es" href="/mathix/es/">
+  <link rel="alternate" hreflang="fr" href="/mathix/fr/">
+  <link rel="alternate" hreflang="de" href="/mathix/de/">
+  <link rel="alternate" hreflang="ka" href="/mathix/ka/">
+  <link rel="alternate" hreflang="ko" href="/mathix/ko/">
+  <link rel="alternate" hreflang="zh" href="/mathix/zh/">
+  <link rel="alternate" hreflang="hi" href="/mathix/hi/">
+  <link rel="alternate" hreflang="x-default" href="/mathix/">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============== HEADER ============== -->
+<header class="site">
+  <div class="container inner">
+    <a class="wordmark" href="/mathix/ko/">
+      <span class="glyph">M</span>
+      Mathix
+    </a>
+    <div class="nav-right">
+      <select class="lang-select" id="lang-select" data-base="/mathix/" aria-label="언어 변경">
+        <option value="en">🇬🇧  English</option>
+        <option value="ru">🇷🇺  Русский</option>
+        <option value="es">🇪🇸  Español</option>
+        <option value="fr">🇫🇷  Français</option>
+        <option value="de">🇩🇪  Deutsch</option>
+        <option value="ka">🇬🇪  ქართული</option>
+        <option value="ko" selected>🇰🇷  한국어</option>
+        <option value="zh">🇨🇳  中文</option>
+        <option value="hi">🇮🇳  हिन्दी</option>
+      </select>
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="테마 전환">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="container">
+    <h1>모든 학생을 위한 고유한 수학 시험</h1>
+    <p class="lede">학생마다 하나의 템플릿에서 자기만의 버전을 받습니다. 진짜 실력을 측정하고 — 채점은 몇 분이면 끝납니다.</p>
+    <div class="hero-cta-row">
+      <button class="pill primary large" type="button" data-open-waitlist>
+        얼리 액세스 받기
+        <svg class="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <p class="hero-meta">처음 500명의 선생님께 무료 · 신용카드 필요 없음</p>
+
+    <div class="hero-screen-wrap">
+      <div class="frame ratio-16x10">
+        <div class="app">
+          <div class="titlebar">
+            <span class="traffic"><i></i><i></i><i></i></span>
+            <span class="crumbs">Algebra · <b>Math Test #3</b></span>
+          </div>
+          <div class="body" style="grid-template-columns: 1fr;">
+            <div class="main">
+              <div class="h">
+                <span class="t">Math Test #3</span>
+                <span class="meta">Template saved · 28 variants ready</span>
+              </div>
+              <div class="hero-split">
+                <div class="hs-col">
+                  <div class="hs-label"><span class="hs-dot blue"></span>Template</div>
+                  <div class="constructor">
+                    <div class="cblock active">
+                      <div class="grip"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="ctop">
+                        <span class="ctype blue"><span class="dot"></span>Quadratic equation</span>
+                        <span class="cmath"><span class="tex"><math><mrow><mi style="color:#007AFF;">a</mi><mspace width="0.1667em"></mspace><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mi style="color:#34C759;">b</mi><mspace width="0.1667em"></mspace><mi>x</mi><mo>+</mo><mi style="color:#FF9500;">c</mi><mo>=</mo><mn>0</mn></mrow></math></span></span>
+                        <div class="cparams">
+                          <span class="tag blue">a ∈ [2; 9]</span>
+                          <span class="tag green">b ∈ [−12; 12]</span>
+                          <span class="tag orange">c prime</span>
+                        </div>
+                      </div>
+                      <span class="pts"><b>3</b> pt</span>
+                    </div>
+                    <div class="cblock">
+                      <div class="grip"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="ctop">
+                        <span class="ctype green"><span class="dot"></span>Vieta's formula</span>
+                        <span class="cmath"><span class="tex"><math><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><mspace width="1em"></mspace><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mtext> for </mtext><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mi style="color:#34C759;">b</mi><mspace width="0.1667em"></mspace><mi>x</mi><mo>+</mo><mi style="color:#FF9500;">c</mi><mo>=</mo><mn>0</mn></mrow></math></span></span>
+                        <div class="cparams">
+                          <span class="tag purple">D &gt; 0</span>
+                          <span class="tag green">integer roots</span>
+                        </div>
+                      </div>
+                      <span class="pts"><b>2</b> pt</span>
+                    </div>
+                    <div class="cblock">
+                      <div class="grip"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                      <div class="ctop">
+                        <span class="ctype orange"><span class="dot"></span>Single root</span>
+                        <span class="cmath"><span class="tex"><math><mrow><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mi>k</mi><mspace width="0.1667em"></mspace><mi>x</mi><mo>+</mo><mi style="color:#FF9500;">c</mi><mo>=</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mi>D</mi><mo>=</mo><mn>0</mn></mrow></math></span></span>
+                        <div class="cparams"><span class="tag orange">c = 9, 16, 25…</span></div>
+                      </div>
+                      <span class="pts"><b>3</b> pt</span>
+                    </div>
+                    <button class="cadd" type="button">Add problem</button>
+                  </div>
+                </div>
+                <div class="hs-col">
+                  <div class="hs-label"><span class="hs-dot green"></span>미리보기 · 버전 V07</div>
+                  <div class="doc-page hero-doc" style="font-size: 9.5px;">
+                    <div class="doc-head">
+                      <h4>수학 시험</h4>
+                      <span class="doc-badge">V07</span>
+                    </div>
+                    <div class="doc-meta"><span>대수학 및 해석학</span><span>45분 · 10문제</span></div>
+                    <table class="doc-table" style="font-size:8.5px;">
+                      <thead>
+                        <tr><th>#</th><th>Instructions</th><th>Problem</th><th>Answer</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td class="num cat-percent">1</td><td class="cond">25% 구하기</td><td class="math"><span class="tex"><math><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>3</mn><mn>5</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mo lspace="0em" rspace="0em">=</mo></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-equation">2</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mn>4</mn><mi>x</mi><mo>+</mo><mn>7</mn><mo>=</mo><mi>x</mi><mo>−</mo><mn>5</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-system">3</td><td class="cond">연립방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mo fence="true" form="prefix" stretchy="true">{</mo><mtable><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>7</mn></mrow></mtd></mtr><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>2</mn></mrow></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true"></mo></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div><div class="ans-line"><span class="tex"><math><mrow><mi>y</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-equation">4</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo></mrow></math></span><span class="ph"></span></div><div class="ans-line"><span class="tex"><math><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-odz">5</td><td class="cond">정의역 명시하고 풀기</td><td class="math"><span class="tex"><math><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></mfrac></mstyle><mo>=</mo><mn>2</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div><div class="ans-line">Domain:<span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-equation">6</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><msqrt><mrow><mi>x</mi><mo>+</mo><mn>7</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-equation">7</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mrow><mi>sin</mi><mo>⁡</mo><mspace width="0.1667em"></mspace></mrow><mi>x</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></mstyle></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-equation">8</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><msub><mi>log</mi><mn>3</mn></msub><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-extremum">9</td><td class="cond">극소점</td><td class="math"><span class="tex"><math><mrow><mi>f</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn class="tml-sml-pad">3</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mn>9</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo></mrow></math></span><span class="ph"></span></div></td></tr>
+                        <tr><td class="num cat-integral">10</td><td class="cond">계산</td><td class="math"><span class="tex"><math><mstyle scriptlevel="0" displaystyle="true"><msubsup><mo movablelimits="false">∫</mo><mn>0</mn><mn>2</mn></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mn>3</mn><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mspace width="0.1667em"></mspace><mi>d</mi><mi>x</mi></mstyle></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mo lspace="0em" rspace="0em">=</mo></math></span><span class="ph"></span></div></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="compile-cta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M5 12l7 7 7-7M5 21h14"/></svg>
+                Download variants
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROBLEM ============== -->
+<section class="band">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">오늘의 현실</span>
+      <h2>오늘날의 시험은 망가져 있습니다</h2>
+    </div>
+    <div class="col-3">
+      <div class="problem-card">
+        <div class="icon-square red" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h12l4 4v8a2 2 0 0 1-2 2H4z"/><path d="M16 6v6h4"/><path d="M8 14h6M8 18h4"/></svg>
+        </div>
+        <h3>진짜 실력이 가려집니다</h3>
+        <p class="sub">모든 학생이 같은 시험지를 받으면 누가 정말로 이해했는지 알 수 없습니다. 점수는 더 이상 각자의 실력을 보여주지 않습니다.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-square orange" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <h3>몇 시간의 채점</h3>
+        <p class="sub">28장 × 5문제 × 대조 확인. 저녁과 주말이 자동화할 수 있는 일에 사라집니다.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-square purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h9l3 3h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 12h8M7 16h5"/></svg>
+        </div>
+        <h3>해마다 같은 문제들</h3>
+        <p class="sub">작년 정답지는 이미 TikTok에 있습니다. 처음부터 다시 문제를 만드는 것 — 또 한 번 잃어버린 저녁.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SOLUTION INTRO ============== -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Mathix</span>
+      <h2>세 가지 모두 해결합니다</h2>
+      <p class="lede">하나의 템플릿이 개별 학생용 버전과 별도의 교사용 정답지가 됩니다. LMS도, 통합도, 학습 곡선도 없습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURE 1 — Variants ============== -->
+<section class="band">
+  <div class="container">
+    <div class="feature">
+      <div class="text">
+        <span class="eyebrow">고유한 버전</span>
+        <h2>한 템플릿 → 30개의 다른 버전</h2>
+        <p>변수와 제약으로 한 번만 문제를 작성하세요. Mathix가 숫자를 선택해 모든 학생이 자기만의 문제를 받습니다 — 정확히 같은 난이도로.</p>
+        <ul class="bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>범위와 제약을 가진 변수</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>난이도와 답의 형태를 제어</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>교실에 똑같은 시험지는 없음</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="frame ratio-10x7">
+          <div class="app">
+            <div class="titlebar">
+              <span class="traffic"><i></i><i></i><i></i></span>
+              <span class="crumbs">Math Test #3 · <b>Student variants</b></span>
+            </div>
+            <div class="body" style="grid-template-columns: 1fr;">
+              <div class="main">
+                <div class="h"><span class="t">V12 · 정답이 채워진 버전</span><span class="meta">무작위 버전 — 학생마다 자신만의 숫자를 받습니다</span></div>
+                <div class="doc-page" style="font-size: 9.5px;">
+                  <div class="doc-head"><h4>수학 시험</h4><span class="doc-badge key">V12 · 정답</span></div>
+                  <div class="doc-meta"><span>대수학 및 해석학</span><span>16개 중 12번째 버전</span></div>
+                  <table class="doc-table" style="font-size:8.5px;">
+                    <thead><tr><th>#</th><th>지시</th><th>문제</th><th>정답</th></tr></thead>
+                    <tbody>
+                      <tr><td class="num cat-percent">1</td><td class="cond">50% 구하기</td><td class="math"><span class="tex"><math><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>5</mn><mn>12</mn></mfrac></mstyle></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">2</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mn>5</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-system">3</td><td class="cond">연립방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mo fence="true" form="prefix" stretchy="true">{</mo><mtable><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>8</mn></mrow></mtd></mtr><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>2</mn></mrow></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true"></mo></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo>=</mo><mn>2</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">4</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mn>2</mn><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mo form="prefix" stretchy="false">−</mo><mstyle displaystyle="false" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo separator="true">,</mo><mtext> </mtext><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-odz">5</td><td class="cond">정의역 명시하고 풀기</td><td class="math"><span class="tex"><math><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle><mo>=</mo><mn>7</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mi>x</mi><mo>≠</mo><mn>1</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">6</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><msqrt><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">7</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mrow><mi>cos</mi><mo>⁡</mo><mspace width="0.1667em"></mspace></mrow><mi>x</mi><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mo form="prefix" stretchy="false">±</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mi>π</mi><mn>3</mn></mfrac></mstyle><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">8</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mo>=</mo><mn>3</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-extremum">9</td><td class="cond">극소점</td><td class="math"><span class="tex"><math><mrow><mi>f</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn class="tml-sml-pad">3</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>−</mo><mn>9</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-integral">10</td><td class="cond">계산</td><td class="math"><span class="tex"><math><mstyle scriptlevel="0" displaystyle="true"><msubsup><mo movablelimits="false">∫</mo><mn>0</mn><mn>2</mn></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mn>3</mn><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mn>2</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mspace width="0.1667em"></mspace><mi>d</mi><mi>x</mi></mstyle></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mn>12</mn></math></span></div></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURE 2 — Answer key ============== -->
+<section>
+  <div class="container">
+    <div class="feature reverse">
+      <div class="text">
+        <span class="eyebrow">정답지</span>
+        <h2>저녁이 아닌, 몇 분 만의 채점</h2>
+        <p>Mathix는 즉시 교사용 정답지를 만듭니다 — 각 버전에 해당하는 정답. 대조 확인도, 계산 실수도 없습니다.</p>
+        <ul class="bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>28개의 정답이 한 페이지에</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>중간 단계가 있는 풀이 — 선택사항</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>교사 전용 별도 파일</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="frame ratio-10x7">
+          <div class="app">
+            <div class="titlebar">
+              <span class="traffic"><i></i><i></i><i></i></span>
+              <span class="crumbs">Math Test #3 · <b>Answer key (teacher only)</b></span>
+            </div>
+            <div class="body" style="grid-template-columns: 1fr;">
+              <div class="main" style="padding: 18px 22px;">
+                <div class="doc-page" style="font-size: 11px;">
+                  <div class="doc-head"><h4>수학 시험 — 정답지</h4><span class="doc-badge key">정답 · V01</span></div>
+                  <div class="doc-meta"><span>교사 전용</span><span>16개 중 01번째 버전</span></div>
+                  <table class="doc-table">
+                    <thead><tr><th>#</th><th>지시</th><th>문제</th><th>정답</th></tr></thead>
+                    <tbody>
+                      <tr><td class="num cat-percent">1</td><td class="cond">75% 구하기</td><td class="math"><span class="tex"><math><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>3</mn><mn>5</mn></mfrac></mstyle></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>81</mn><mn>80</mn></mfrac></mstyle></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">2</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mn>5</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-system">3</td><td class="cond">연립방정식 풀기</td><td class="math"><span class="tex"><math><mrow><mo fence="true" form="prefix" stretchy="true">{</mo><mtable><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>5</mn></mrow></mtd></mtr><mtr><mtd class="tml-left" style="padding-left:0em;padding-right:0em;"><mrow><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true"></mo></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo>=</mo><mn>2</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-equation">4</td><td class="cond">방정식 풀기</td><td class="math"><span class="tex"><math><mrow><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mo form="prefix" stretchy="false">−</mo><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-odz">5</td><td class="cond">정의역, 풀이</td><td class="math"><span class="tex"><math><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mn>5</mn><mi>x</mi><mo>+</mo><mn>17</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></mfrac></mstyle><mo>=</mo><mn>3</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mo form="prefix" stretchy="false">−</mo><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mi>x</mi><mo>≠</mo><mo form="prefix" stretchy="false">−</mo><mn>3</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-extremum">6</td><td class="cond">극소</td><td class="math"><span class="tex"><math><mrow><msup><mi>x</mi><mn class="tml-sml-pad">3</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></math></span></div></td></tr>
+                      <tr><td class="num cat-integral">7</td><td class="cond">계산</td><td class="math"><span class="tex"><math><mstyle scriptlevel="0" displaystyle="true"><msubsup><mo movablelimits="false">∫</mo><mn>1</mn><mn>2</mn></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mn>3</mn><msup><mi>x</mi><mn class="tml-sml-pad">2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mspace width="0.1667em"></mspace><mi>d</mi><mi>x</mi></mstyle></math></span></td><td class="ans"><div class="ans-line"><span class="tex"><math><mn>14</mn></math></span></div></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURE 3 — Bank ============== -->
+<section class="band">
+  <div class="container">
+    <div class="feature">
+      <div class="text">
+        <span class="eyebrow">템플릿 뱅크</span>
+        <h2>저녁이 아닌, 두 번의 클릭으로 새 버전</h2>
+        <p>자신만의 템플릿 라이브러리를 만들고 해마다 재사용하세요. Mathix가 숫자를 다시 생성합니다 — 페이지가 로드되기 전에 TikTok의 문제들은 이미 구식이 됩니다.</p>
+        <ul class="bullets">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>개인용과 공유(부서) 라이브러리</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>어떤 템플릿이든 한 번의 클릭으로 재컴파일</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>학교와 대학교에서 사용 가능</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="frame ratio-10x7">
+          <div class="app">
+            <div class="titlebar">
+              <span class="traffic"><i></i><i></i><i></i></span>
+              <span class="crumbs">Library · <b>My templates</b></span>
+            </div>
+            <div class="body" style="grid-template-columns: 1fr;">
+              <div class="main">
+                <div class="h"><span class="t">Algebra · Math tests</span><span class="meta">18 templates · 4 in progress</span></div>
+                <div class="bank">
+                  <div class="head"><span>Template</span><span>Topic</span><span>Variants</span><span>Last used</span><span></span></div>
+                  <div class="row"><span class="name">Quadratic equations — Test #3</span><span class="muted">Algebra</span><span>28</span><span class="muted">today</span><span><span class="pill-mini live">live</span></span></div>
+                  <div class="row"><span class="name">Linear systems</span><span class="muted">Algebra</span><span>28</span><span class="muted">Nov 12</span><span><span class="pill-mini live">live</span></span></div>
+                  <div class="row"><span class="name">Linear function y = kx + b</span><span class="muted">Algebra</span><span>28</span><span class="muted">Nov 5</span><span><span class="pill-mini live">live</span></span></div>
+                  <div class="row"><span class="name">Polynomial factorization</span><span class="muted">Algebra</span><span>—</span><span class="muted">draft</span><span><span class="pill-mini draft">draft</span></span></div>
+                  <div class="row"><span class="name">Absolute value inequalities</span><span class="muted">Algebra</span><span>28</span><span class="muted">Oct 28</span><span><span class="pill-mini live">live</span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA ============== -->
+<section class="final-cta">
+  <div class="container">
+    <span class="eyebrow" style="display:inline-block; margin-bottom: 14px;">얼리 액세스</span>
+    <h2>대기자 명단에 등록</h2>
+    <p class="lede">Mathix는 이번 가을에 출시됩니다. 처음 500명의 선생님은 무료 1년을 받습니다 — 이름과 이메일을 남겨주시면 오픈할 때 알려드립니다.</p>
+    <form class="cta-form" action="https://formsubmit.co/beardness.andy.dev+mathix@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="이름" required autocomplete="given-name" aria-label="이름">
+      <input type="email" name="email" placeholder="이메일" required autocomplete="email" aria-label="이메일">
+      <input type="hidden" name="_subject" value="[Mathix] 새 대기자 등록">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <button type="submit" class="pill primary">얼리 액세스 받기</button>
+    </form>
+    <p class="cta-meta">출시에 관한 메일 한 통만. 뉴스레터 없음.</p>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site">
+  © 2026 Mathix · 선생님이 선생님을 위해 만들었습니다
+</footer>
+
+<!-- ============== WAITLIST FAB ============== -->
+<div class="fab-wrap" id="fabWrap">
+  <button class="fab" id="fabBtn" type="button">
+    얼리 액세스 받기
+    <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+  </button>
+  <div class="fab-card" role="dialog" aria-labelledby="fabTitle">
+    <div class="fab-form">
+      <div class="head">
+        <h3 id="fabTitle">대기자 명단에 등록</h3>
+        <button class="close" id="fabClose" type="button" aria-label="닫기">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <p class="sub">액세스가 열리는 즉시 연락드립니다. 처음 500명의 선생님 — 1년 무료.</p>
+      <form id="fabForm" action="https://formsubmit.co/beardness.andy.dev+mathix@gmail.com" method="POST">
+        <label class="field"><input type="text" name="name" id="fName" placeholder="이름" required autocomplete="given-name"></label>
+        <label class="field"><input type="email" name="email" id="fEmail" placeholder="이메일" required autocomplete="email"></label>
+        <input type="hidden" name="_subject" value="[Mathix] 새 대기자 등록">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <button type="submit" class="submit-btn">등록하기</button>
+      </form>
+      <p class="fab-meta">출시에 관한 메일 한 통만. 뉴스레터 없음.</p>
+    </div>
+    <div class="fab-success">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h3>등록되었습니다</h3>
+      <p>감사합니다! 액세스가 열리면 이메일로 연락드립니다.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
